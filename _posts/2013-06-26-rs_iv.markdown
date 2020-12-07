@@ -1,0 +1,16 @@
+---
+layout: post
+alias: iv2013
+categories: research
+title: "Multi-lane Detection in Urban Driving Environments using Conditional Random Fields"
+titlelink: http://dx.doi.org/10.1109/IVS.2013.6629645
+year: 2013
+image: /images/2013_iv.png
+image_over: /images/2013_iv.png
+authors: "<b>Junhwa Hur</b>, Seung-Nam Kang, and Seung-Woo Seo"
+venue: "Intelligent Vehicles Symposium (IV)"
+code: https://github.com/hurjunhwa/mld_crf
+paper: http://dx.doi.org/10.1109/IVS.2013.6629645
+project: https://sites.google.com/site/hurjunhwa/research/mld_iv13
+video: https://www.youtube.com/watch?v=8LEUHUdqxag&feature=emb_title&ab_channel=JunhwaHur
+---

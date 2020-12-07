@@ -1,0 +1,7 @@
+---
+layout: post
+categories: news
+date: 2018-12-06
+comment: "Our MirrorFlow paper received the Best Paper Award at Computer Graphik Abend 2018, Impact on Science."
+visible: False
+---

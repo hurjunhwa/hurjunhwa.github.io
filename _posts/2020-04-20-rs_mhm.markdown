@@ -1,0 +1,16 @@
+---
+layout: post
+alias: mhm
+categories: research
+title: "Optical Flow Estimation in the Deep Learning Age"
+titlelink: https://arxiv.org/abs/2004.02853
+year: 2020
+image: /images/2020_mhm.jpg
+image_over: /images/2020_mhm.jpg
+authors: "<b>Junhwa Hur</b> and Stefan Roth"
+venue: "Modelling Human Motion, N. Noceti, A. Sciutti and F. Rea, Eds., Springer"
+arxiv: https://arxiv.org/abs/2004.02853
+paper: https://link.springer.com/chapter/10.1007/978-3-030-46732-6_7
+---
+
+As a book chapter, we comprehensively review CNN-based approaches to optical flow and their technical details, including un-/semi-supervised methods.

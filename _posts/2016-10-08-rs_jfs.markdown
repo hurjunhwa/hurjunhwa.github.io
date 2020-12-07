@@ -1,0 +1,18 @@
+---
+layout: post
+alias: jfs
+categories: research
+title: "Joint Optical Flow and Temporally Consistent Semantic Segmentation"
+titlelink: https://arxiv.org/pdf/1607.07716v1.pdf
+year: 2016
+image: /images/2016_jfs.png
+image_over: /images/2016_jfs.png
+authors: "<b>Junhwa Hur</b> and Stefan Roth"
+venue: "ECCV Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving (ECCVW)"
+comment: "Best paper award"
+arxiv: https://arxiv.org/pdf/1607.07716v1.pdf
+paper: https://doi.org/10.1007/978-3-319-46604-0_12
+poster: /pdfs/2016_eccvws_poster.pdf
+---
+
+Optical flow and semantic segmentation can mutually leverage each other.

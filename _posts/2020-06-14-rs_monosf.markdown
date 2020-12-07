@@ -1,0 +1,20 @@
+---
+layout: post
+alias: monosf
+categories: research
+title: "Self-Supervised Monocular Scene Flow Estimation"
+titlelink: https://openaccess.thecvf.com/content_CVPR_2020/papers/Hur_Self-Supervised_Monocular_Scene_Flow_Estimation_CVPR_2020_paper.pdf
+year: 2020
+image: /images/2020_monosf.png
+image_over: /images/2020_monosf.png
+authors: "<b>Junhwa Hur</b> and Stefan Roth"
+venue: "CVPR"
+comment: "Oral presentation"
+arxiv: https://arxiv.org/abs/2004.04143
+code: https://github.com/visinf/self-mono-sf
+paper: https://openaccess.thecvf.com/content_CVPR_2020/papers/Hur_Self-Supervised_Monocular_Scene_Flow_Estimation_CVPR_2020_paper.pdf
+supp: https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Hur_Self-Supervised_Monocular_Scene_CVPR_2020_supplemental.pdf
+talk: https://www.youtube.com/watch?v=1lR6PQO82lc&feature=youtu.be
+---
+
+We propose to estimate scene flow from only two monocular images with a CNN trained in a self-supervised manner.
