@@ -48,8 +48,8 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
-              <br><br>{% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'news' %}{% if post.visible == true %}
-              {{ post.date | date: "%m/%d/%Y" }}: {{post.comment}}<br>{% endif %}{% endif %}{% endfor %}{% endfor %}
+              <ul>{% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'news' %}{% if post.visible == true %}
+              <li>{{ post.date | date: "%m/%Y" }}: {{post.comment}}</li>{% endif %}{% endif %}{% endfor %}{% endfor %}</ul>
             </td>
           </tr>
         </table>
@@ -90,18 +90,17 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
               <br>
               {{post.authors}}
               <br>
-              <em>{{post.venue}}</em>, {{post.year}}
-              {% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
+              <em>{{post.venue}}</em>, {{post.year}}{% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
               <br>
-              <a href="{{post.paper}}">paper</a>
-              {% if post.supp %}/ <a href="{{post.supp}}">supp</a>{% endif %}
-              {% if post.arxiv %}/ <a href="{{post.arxiv}}">arxiv</a>{% endif %}
-              {% if post.project %}/ <a href="{{post.project}}">project</a>{% endif %}
-              {% if post.code %}/ <a href="{{post.code}}">code</a>{% endif %}
-              {% if post.talk %}/ <a href="{{post.talk}}">talk</a>{% endif %}
-              {% if post.video %}/ <a href="{{post.video}}">video</a>{% endif %}
-              {% if post.poster %}/ <a href="{{post.poster}}">poster</a>{% endif %}
-              {% if post.slide %}/ <a href="{{post.slide}}">slide</a>{% endif %}
+              <a href="{{post.paper}}">paper</a>{% if post.supp %}/ 
+              <a href="{{post.supp}}">supp</a>{% endif %}{% if post.arxiv %}/ 
+              <a href="{{post.arxiv}}">arxiv</a>{% endif %}{% if post.project %}/ 
+              <a href="{{post.project}}">project</a>{% endif %}{% if post.code %}/ 
+              <a href="{{post.code}}">code</a>{% endif %}{% if post.talk %}/ 
+              <a href="{{post.talk}}">talk</a>{% endif %}{% if post.video %}/ 
+              <a href="{{post.video}}">video</a>{% endif %}{% if post.poster %}/ 
+              <a href="{{post.poster}}">poster</a>{% endif %}{% if post.slide %}/ 
+              <a href="{{post.slide}}">slide</a>{% endif %}
               <p></p>
               {{ post.excerpt }}
             </td>
@@ -142,11 +141,10 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
             <td style="padding:2.0%;width:75%;vertical-align:middle">
               {% if post.titlelink %}<a href="{{post.titlelink}}"><h3>{{post.title}}</h3></a>{% else %}<h3>{{post.title}}</h3>{% endif %}
               <br>
-              <em>{{post.venue}}</em>, {{post.year}}
-              {% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
+              <em>{{post.venue}}</em>, {{post.year}} {% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
               <br>
-              {% if post.video %}<a href="{{post.video}}">video</a>{% endif %}
-              {% if post.project %}/ <a href="{{post.project}}">project</a>{% endif %}
+              {% if post.video %}<a href="{{post.video}}">video</a>{% endif %}{% if post.project %}/ 
+              <a href="{{post.project}}">project</a>{% endif %}
               <p></p>
               {{ post.excerpt }}
             </td>
