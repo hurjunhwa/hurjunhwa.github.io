@@ -5,8 +5,8 @@ categories: research
 title: "Generalized Deformable Spatial Pyramid: Geometry-Preserving Dense Correspondence Estimation"
 titlelink: http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Hur_Generalized_Deformable_Spatial_2015_CVPR_paper.pdf
 year: 2015
-image: /images/2015_gdsp.png
-image_over: /images/2015_gdsp.png
+image: /images/2015_gdsp.jpg
+image_over: /images/2015_gdsp.gif
 authors: "<b>Junhwa Hur</b>, Hwasup Lim, Changsoo Park, and Sang Chul Ahn"
 venue: "CVPR"
 paper: http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Hur_Generalized_Deformable_Spatial_2015_CVPR_paper.pdf
