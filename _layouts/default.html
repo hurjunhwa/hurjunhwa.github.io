@@ -70,17 +70,20 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
           {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'research' %}
           <tr onmouseout="{{post.alias}}_stop()" onmouseover="{{post.alias}}_start()">
             <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_image'>
-                  <img src={{post.image_over}} width="160"></div>
+              <div class="one" style="width:auto; height:auto; max-width:100%;">{% if post.image_over %}
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_mouseover'>
+                <img src={{post.image_over}} width="160"></div>{% endif %}{% if post.video_over %}
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_mouseover'>
+                <video width="160" muted autoplay loop><source src={{post.video_over}} type="video/mp4">Your browser does not support the video tag. 
+                </video></div>{% endif %}
                 <img src={{post.image}} width="160">
               </div>
               <script type="text/javascript">
                 function {{post.alias}}_start() {
-                  document.getElementById('{{post.alias}}_image').style.opacity = "1";
+                  document.getElementById('{{post.alias}}_mouseover').style.opacity = "1";
                 }
                 function {{post.alias}}_stop() {
-                  document.getElementById('{{post.alias}}_image').style.opacity = "0";
+                  document.getElementById('{{post.alias}}_mouseover').style.opacity = "0";
                 }
                 {{post.alias}}_stop()
               </script>

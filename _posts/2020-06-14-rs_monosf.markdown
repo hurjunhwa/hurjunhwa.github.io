@@ -6,7 +6,7 @@ title: "Self-Supervised Monocular Scene Flow Estimation"
 titlelink: https://openaccess.thecvf.com/content_CVPR_2020/papers/Hur_Self-Supervised_Monocular_Scene_Flow_Estimation_CVPR_2020_paper.pdf
 year: 2020
 image: /images/2020_monosf.jpg
-image_over: /images/2020_monosf.gif
+video_over: /images/2020_monosf.mp4
 authors: "<b>Junhwa Hur</b> and Stefan Roth"
 venue: "CVPR"
 comment: "Oral presentation"
