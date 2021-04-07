@@ -56,12 +56,11 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
               <ul>
+              <li>03/2021: Our paper on Multi-frame monocular scene flow has been accepted at CVPR 2021.</li>
               <li>11/2020: Chosen as one of 66 outstanding reviewers of ACCV 2020.</li>
               <li>08/2020: Chosen as one of 216 outstanding reviewers of ECCV 2020 (out of a total of 2830 reviewers).</li>
               <li>06/2020: Chosen as one of 141 outstanding reviewers of CVPR 2020 (out of a total of 3664 reviewers).</li>
-              <li>02/2020: Our paper on Monocular scene flow estimation has been accepted at CVPR 2020 as an oral presentation.</li>
-              <li>12/2019: Our UnFlow paper received the Best Paper Award at Computer Graphik Abend 2019, Impact on Science.</li>
-              <li>06/2019: Chosen as one of 246 outstanding reviewers of CVPR 2019 (out of a total of over 2800 reviewers).</li></ul>
+              <li>02/2020: Our paper on Monocular scene flow estimation has been accepted at CVPR 2020 as an oral presentation.</li></ul>
             </td>
           </tr>
         </table>
@@ -72,13 +71,42 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm interested in computer vision and machine learning, especially understanding dynamic scene from a monocular video.
+                I'm interested in computer vision and machine learning, especially understanding dynamic scene from a monocular video through self-supervision.
               </p>
             </td>
           </tr>
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          
+          <tr onmouseout="multimonosf_stop()" onmouseover="multimonosf_start()">
+            <td style="padding:2.0%;width:25%;vertical-align:middle">
+              <div class="one" style="width:auto; height:auto; max-width:100%;">
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='multimonosf_image'>
+                  <img src=/images/2021_multimonosf.gif width="160"></div>
+                <img src=/images/2021_multimonosf.jpg width="160">
+              </div>
+              <script type="text/javascript">
+                function multimonosf_start() {
+                  document.getElementById('multimonosf_image').style.opacity = "1";
+                }
+                function multimonosf_stop() {
+                  document.getElementById('multimonosf_image').style.opacity = "0";
+                }
+                multimonosf_stop()
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <h3>Self-Supervised Multi-Frame Monocular Scene Flow</h3>
+              <br>
+              <b>Junhwa Hur</b> and Stefan Roth
+              <br>
+              <em>CVPR</em>, 2021
+              <br><font color="gray">coming soon!</font>
+              
+
+            </td>
+          </tr>
           
           <tr onmouseout="monosf_stop()" onmouseover="monosf_start()">
             <td style="padding:2.0%;width:25%;vertical-align:middle">
@@ -149,7 +177,7 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
             <td style="padding:2.0%;width:25%;vertical-align:middle">
               <div class="one" style="width:auto; height:auto; max-width:100%;">
                 <div class="two" style="width:auto; height:auto; max-width:100%;" id='irr_image'>
-                  <img src=/images/2019_irr.png width="160"></div>
+                  <img src=/images/2019_irr.gif width="160"></div>
                 <img src=/images/2019_irr.png width="160">
               </div>
               <script type="text/javascript">

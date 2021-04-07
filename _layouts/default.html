@@ -60,7 +60,7 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm interested in computer vision and machine learning, especially understanding dynamic scene from a monocular video.
+                I'm interested in computer vision and machine learning, especially understanding dynamic scene from a monocular video through self-supervision.
               </p>
             </td>
           </tr>
@@ -91,7 +91,7 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
               {{post.authors}}
               <br>
               <em>{{post.venue}}</em>, {{post.year}}{% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
-              <br>
+              <br>{% if post.comingsoon %}<font color="gray">coming soon!</font>{% else %}
               <a href="{{post.paper}}">paper</a>{% if post.supp %} / 
               <a href="{{post.supp}}">supp</a>{% endif %}{% if post.arxiv %} / 
               <a href="{{post.arxiv}}">arxiv</a>{% endif %}{% if post.project %} / 
@@ -100,7 +100,7 @@ under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team
               <a href="{{post.talk}}">talk</a>{% endif %}{% if post.video %} / 
               <a href="{{post.video}}">video</a>{% endif %}{% if post.poster %} / 
               <a href="{{post.poster}}">poster</a>{% endif %}{% if post.slide %} / 
-              <a href="{{post.slide}}">slide</a>{% endif %}
+              <a href="{{post.slide}}">slide</a>{% endif %}{% endif %}
               {{ post.excerpt }}
             </td>
           </tr>

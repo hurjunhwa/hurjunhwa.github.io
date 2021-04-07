@@ -6,7 +6,7 @@ title: "Iterative Residual Refinement for Joint Optical Flow and Occlusion Estim
 titlelink: http://openaccess.thecvf.com/content_CVPR_2019/papers/Hur_Iterative_Residual_Refinement_for_Joint_Optical_Flow_and_Occlusion_Estimation_CVPR_2019_paper.pdf
 year: 2019
 image: /images/2019_irr.png
-image_over: /images/2019_irr.png
+image_over: /images/2019_irr.gif
 authors: "<b>Junhwa Hur</b> and Stefan Roth"
 venue: "CVPR"
 arxiv: https://arxiv.org/abs/1904.05290

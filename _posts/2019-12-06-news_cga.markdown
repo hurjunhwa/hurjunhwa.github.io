@@ -3,5 +3,5 @@ layout: post
 categories: news
 date: 2019-12-06
 comment: "Our UnFlow paper received the Best Paper Award at Computer Graphik Abend 2019, Impact on Science."
-visible: true
+visible: False
 ---
