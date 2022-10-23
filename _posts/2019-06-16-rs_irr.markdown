@@ -15,4 +15,4 @@ paper: http://openaccess.thecvf.com/content_CVPR_2019/papers/Hur_Iterative_Resid
 supp: http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Hur_Iterative_Residual_Refinement_CVPR_2019_supplemental.pdf
 ---
 
-Iterative residual refinement scheme based on weight sharing reduces the number of network parameters and improves the accuracy for optical flow and occlusion.
+An iterative residual refinement scheme based on weight sharing reduces the number of network parameters and improves the accuracy of optical flow and occlusion.

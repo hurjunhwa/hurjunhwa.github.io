@@ -15,4 +15,4 @@ paper: https://doi.org/10.1007/978-3-319-46604-0_12
 poster: /pdfs/2016_eccvws_poster.pdf
 ---
 
-Optical flow and semantic segmentation can mutually leverage each other.
+We propose a method for the joint estimation of optical flow and temporally consistent semantic segmentation, which closely connects the two problem domains and allows each task leverage the other.

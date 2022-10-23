@@ -16,4 +16,4 @@ paper: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16502/16319
 slide: http://simonmeister.org/files/slides_unflow_aaai18.pdf
 ---
 
-Directly training on the target domain with a better unsupervised loss can outperform the supervised pre-training on synthetic dataset. 
+By directly training on the target domain with an improved unsupervised loss, our method outperforms a supervised method that is pre-trained on a synthetic dataset. 

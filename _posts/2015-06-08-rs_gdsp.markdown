@@ -15,4 +15,4 @@ project: https://sites.google.com/site/hurjunhwa/research/gdsp
 video: https://www.youtube.com/watch?v=74O5LiiXI6w
 ---
 
-Piece-wise similarity transform through pyramid levels can handle non-rigid deformation in semantic matching.
+A piece-wise similarity transform along pyramid levels can approximate a non-rigid deformation in the semantic matching problem.

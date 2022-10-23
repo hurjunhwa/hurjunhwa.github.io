@@ -11,3 +11,5 @@ authors: "<b>Junhwa Hur</b>"
 venue: "Ph.D. Dissertation, Technische Universität Darmstadt"
 paper: https://tuprints.ulb.tu-darmstadt.de/21624/
 ---
+
+In this dissertation, we propose how to jointly formulate multiple tasks for scene understanding and what kind of benefits can be obtained from the joint estimation.

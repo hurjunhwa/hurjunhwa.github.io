@@ -24,7 +24,7 @@
               <h1>
                 Junhwa Hur
               </h1>
-              <p>Hello! I am currently working as a research intern at <a href="https://42dot.ai/">42dot</a>, researching computer vision for future mobility. Previously, I worked as a Ph.D. candidate at <a href="http://www.visinf.tu-darmstadt.de/visinf/news/index.en.jsp">Visual Inference group</a>, <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, under the supervision of <a href="https://www.visinf.tu-darmstadt.de/visinf/team_members/sroth/sroth.en.jsp">Prof. Stefan Roth Ph.D.</a>.
+              <p>Hello! I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
               </p>
               <p style="text-align:center">
                 <a href="mailto:junhwa.hur@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -47,10 +47,10 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
               <ul>
+              <li>09/2022: Our paper on surround-view depth estimation has been accepted at NeurIPS 2022.</li>
+              <li>06/2022: Our paper on robotic grasping for multiple general real-world objects has been accepted at IROS 2022.</li>
               <li>05/2022: Chosen as one of 157 outstanding reviewers of CVPR 2022.</li>
-              <li>05/2022: Successfully defended my Ph.D dissertation!</li>
-              <li>09/2021: Chosen as one of 210 outstanding reviewers of ICCV 2021.</li>
-              <li>03/2021: Our paper on Multi-frame monocular scene flow has been accepted at CVPR 2021.</li></ul>
+              <li>05/2022: Successfully defended my Ph.D. dissertation!</li></ul>
             </td>
           </tr>
         </table>
@@ -68,6 +68,130 @@
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          
+          <tr onmouseout="surrounddepth_stop()" onmouseover="surrounddepth_start()">
+            <td style="padding:2.0%;width:25%;vertical-align:middle">
+              <div class="one" style="width:auto; height:auto; max-width:100%;">
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='surrounddepth_mouseover'>
+                <img src=/images/2022_vf.gif width="160"></div>
+                <img src=/images/2022_vf.jpg width="160">
+              </div>
+              <script type="text/javascript">
+                function surrounddepth_start() {
+                  document.getElementById('surrounddepth_mouseover').style.opacity = "1";
+                }
+                function surrounddepth_stop() {
+                  document.getElementById('surrounddepth_mouseover').style.opacity = "0";
+                }
+                surrounddepth_stop()
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <h3>Self-Supervised Surround-View Depth Estimation with Volumetric Feature Fusion</h3>
+              <br>
+              Jung Hee Kim*, <b>Junhwa Hur</b>*, Tien Phuoc Nguyen, and Seong-Gyun Jeong
+              <br>
+              <em>*Equal contribution</font><br>
+              <em>NeurIPS</em>, 2022
+              <br><font color="gray">coming soon!</font>
+              <p>We introduce a voxel-based approach to surround-view depth estimation that improves metric-scale depth accuracy and can synthesize a depth map at arbitrary rotated views.</p>
+
+            </td>
+          </tr>
+          
+          <tr onmouseout="phddissertation_stop()" onmouseover="phddissertation_start()">
+            <td style="padding:2.0%;width:25%;vertical-align:middle">
+              <div class="one" style="width:auto; height:auto; max-width:100%;">
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='phddissertation_mouseover'>
+                <video width="160" muted autoplay loop><source src=/images/comingsoon.png type="video/mp4">Your browser does not support the video tag. 
+                </video></div>
+                <img src=/images/comingsoon.png width="160">
+              </div>
+              <script type="text/javascript">
+                function phddissertation_start() {
+                  document.getElementById('phddissertation_mouseover').style.opacity = "1";
+                }
+                function phddissertation_stop() {
+                  document.getElementById('phddissertation_mouseover').style.opacity = "0";
+                }
+                phddissertation_stop()
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://tuprints.ulb.tu-darmstadt.de/21624/"><h3>Joint Motion, Semantic Segmentation, Occlusion, and Depth Estimation</h3></a>
+              <br>
+              <b>Junhwa Hur</b>
+              <br>
+              
+              <em>Ph.D. Dissertation, Technische Universität Darmstadt</em>, 2022
+              <br>
+              <a href="https://tuprints.ulb.tu-darmstadt.de/21624/">paper</a>
+              <p>In this dissertation, we propose how to jointly formulate multiple tasks for scene understanding and what kind of benefits can be obtained from the joint estimation.</p>
+
+            </td>
+          </tr>
+          
+          <tr onmouseout="maskgrasp_stop()" onmouseover="maskgrasp_start()">
+            <td style="padding:2.0%;width:25%;vertical-align:middle">
+              <div class="one" style="width:auto; height:auto; max-width:100%;">
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='maskgrasp_mouseover'>
+                <video width="160" muted autoplay loop><source src=/images/comingsoon.png type="video/mp4">Your browser does not support the video tag. 
+                </video></div>
+                <img src=/images/comingsoon.png width="160">
+              </div>
+              <script type="text/javascript">
+                function maskgrasp_start() {
+                  document.getElementById('maskgrasp_mouseover').style.opacity = "1";
+                }
+                function maskgrasp_stop() {
+                  document.getElementById('maskgrasp_mouseover').style.opacity = "0";
+                }
+                maskgrasp_stop()
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <h3>MasKGrasp: Mask-based Grasping for Scenes with Multiple General Real-world Objects</h3>
+              <br>
+              Junho Lee, <b>Junhwa Hur</b>, Inwoo Hwang, and Young Min Kim
+              <br>
+              
+              <em>IROS</em>, 2022
+              <br><font color="gray">coming soon!</font>
+              
+
+            </td>
+          </tr>
+          
+          <tr onmouseout="raftmsf_stop()" onmouseover="raftmsf_start()">
+            <td style="padding:2.0%;width:25%;vertical-align:middle">
+              <div class="one" style="width:auto; height:auto; max-width:100%;">
+                <div class="two" style="width:auto; height:auto; max-width:100%;" id='raftmsf_mouseover'>
+                <img src=/images/2022_raftmsf_b.jpg width="160"></div>
+                <img src=/images/2022_raftmsf_a.jpg width="160">
+              </div>
+              <script type="text/javascript">
+                function raftmsf_start() {
+                  document.getElementById('raftmsf_mouseover').style.opacity = "1";
+                }
+                function raftmsf_stop() {
+                  document.getElementById('raftmsf_mouseover').style.opacity = "0";
+                }
+                raftmsf_stop()
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://arxiv.org/abs/2205.01568"><h3>RAFT-MSF: Self-Supervised Monocular Scene Flow Using Recurrent Optimizer</h3></a>
+              <br>
+              Bayram Bayramli, <b>Junhwa Hur</b>, and Hongtao Lu
+              <br>
+              
+              <em>arXiv preprint</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2205.01568">paper</a>
+              <p>For self-supervised monocular scene flow, our RAFT-backbone-based approach significantly improves the scene flow accuracy and even outperforms a semi-supervised method.</p>
+
+            </td>
+          </tr>
           
           <tr onmouseout="multimonosf_stop()" onmouseover="multimonosf_start()">
             <td style="padding:2.0%;width:25%;vertical-align:middle">
@@ -88,15 +212,18 @@
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="https://arxiv.org/abs/2105.02216"><h3>Self-Supervised Multi-Frame Monocular Scene Flow</h3></a>
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hur_Self-Supervised_Multi-Frame_Monocular_Scene_Flow_CVPR_2021_paper.pdf"><h3>Self-Supervised Multi-Frame Monocular Scene Flow</h3></a>
               <br>
               <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>CVPR</em>, 2021
               <br>
-              <a href="https://arxiv.org/abs/2105.02216">paper</a> / 
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Hur_Self-Supervised_Multi-Frame_Monocular_Scene_Flow_CVPR_2021_paper.pdf">paper</a> / 
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Hur_Self-Supervised_Multi-Frame_Monocular_CVPR_2021_supplemental.pdf">supp</a> / 
               <a href="https://arxiv.org/abs/2105.02216">arxiv</a> / 
-              <a href="https://github.com/visinf/multi-mono-sf">code</a>
+              <a href="https://github.com/visinf/multi-mono-sf">code</a> / 
+              <a href="https://www.youtube.com/watch?v=nFLfm3YZ_RI">talk</a>
               <p>In the multi-frame setup, using ConvLSTM + warping hidden states improves the accuracy and the temporal consistency of the monocular scene flow.</p>
 
             </td>
@@ -125,6 +252,7 @@
               <br>
               <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>CVPR</em>, 2020<font color="#FA4841"><b>&nbsp;&nbsp;Oral presentation</b></font>
               <br>
               <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Hur_Self-Supervised_Monocular_Scene_Flow_Estimation_CVPR_2020_paper.pdf">paper</a> / 
@@ -159,6 +287,7 @@
               <br>
               <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>Modelling Human Motion, N. Noceti, A. Sciutti and F. Rea, Eds., Springer</em>, 2020
               <br>
               <a href="https://link.springer.com/chapter/10.1007/978-3-030-46732-6_7">paper</a> / 
@@ -191,13 +320,14 @@
               <br>
               <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>CVPR</em>, 2019
               <br>
               <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Hur_Iterative_Residual_Refinement_for_Joint_Optical_Flow_and_Occlusion_Estimation_CVPR_2019_paper.pdf">paper</a> / 
               <a href="http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Hur_Iterative_Residual_Refinement_CVPR_2019_supplemental.pdf">supp</a> / 
               <a href="https://arxiv.org/abs/1904.05290">arxiv</a> / 
               <a href="https://github.com/visinf/irr">code</a>
-              <p>Iterative residual refinement scheme based on weight sharing reduces the number of network parameters and improves the accuracy for optical flow and occlusion.</p>
+              <p>An iterative residual refinement scheme based on weight sharing reduces the number of network parameters and improves the accuracy of optical flow and occlusion.</p>
 
             </td>
           </tr>
@@ -224,13 +354,14 @@
               <br>
               Simon Meister, <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>AAAI</em>, 2018<font color="#FA4841"><b>&nbsp;&nbsp;Oral presentation</b></font>
               <br>
               <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16502/16319">paper</a> / 
               <a href="https://arxiv.org/pdf/1711.07837.pdf">arxiv</a> / 
               <a href="https://github.com/simonmeister/UnFlow">code</a> / 
               <a href="http://simonmeister.org/files/slides_unflow_aaai18.pdf">slide</a>
-              <p>Directly training on the target domain with a better unsupervised loss can outperform the supervised pre-training on synthetic dataset.</p>
+              <p>By directly training on the target domain with an improved unsupervised loss, our method outperforms a supervised method that is pre-trained on a synthetic dataset.</p>
 
             </td>
           </tr>
@@ -257,6 +388,7 @@
               <br>
               <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>ICCV</em>, 2017
               <br>
               <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Hur_MirrorFlow_Exploiting_Symmetries_ICCV_2017_paper.pdf">paper</a> / 
@@ -291,12 +423,13 @@
               <br>
               <b>Junhwa Hur</b> and Stefan Roth
               <br>
+              
               <em>ECCV Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving (ECCVW)</em>, 2016<font color="#FA4841"><b>&nbsp;&nbsp;Best paper award</b></font>
               <br>
               <a href="https://doi.org/10.1007/978-3-319-46604-0_12">paper</a> / 
               <a href="https://arxiv.org/pdf/1607.07716v1.pdf">arxiv</a> / 
               <a href="/pdfs/2016_eccvws_poster.pdf">poster</a>
-              <p>Optical flow and semantic segmentation can mutually leverage each other.</p>
+              <p>We propose a method for the joint estimation of optical flow and temporally consistent semantic segmentation, which closely connects the two problem domains and allows each task leverage the other.</p>
 
             </td>
           </tr>
@@ -324,13 +457,14 @@
               <br>
               <b>Junhwa Hur</b>, Hwasup Lim, Changsoo Park, and Sang Chul Ahn
               <br>
+              
               <em>CVPR</em>, 2015
               <br>
               <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Hur_Generalized_Deformable_Spatial_2015_CVPR_paper.pdf">paper</a> / 
               <a href="http://openaccess.thecvf.com/content_cvpr_2015/supplemental/Hur_Generalized_Deformable_Spatial_2015_CVPR_supplemental.pdf">supp</a> / 
               <a href="https://sites.google.com/site/hurjunhwa/research/gdsp">project</a> / 
               <a href="https://www.youtube.com/watch?v=74O5LiiXI6w">video</a>
-              <p>Piece-wise similarity transform through pyramid levels can handle non-rigid deformation in semantic matching.</p>
+              <p>A piece-wise similarity transform along pyramid levels can approximate a non-rigid deformation in the semantic matching problem.</p>
 
             </td>
           </tr>
@@ -357,6 +491,7 @@
               <br>
               <b>Junhwa Hur</b>, Hwasup Lim, and Sang Chul Ahn
               <br>
+              
               <em>International Symposium on Visual Computing (ISVC)</em>, 2014<font color="#FA4841"><b>&nbsp;&nbsp;Oral presentation</b></font>
               <br>
               <a href="https://doi.org/10.1007/978-3-319-14249-4_12">paper</a> / 
@@ -388,6 +523,7 @@
               <br>
               Seung-Nam Kang, Soo-Mok Lee, <b>Junhwa Hur</b>, and Seung-Woo Seo
               <br>
+              
               <em>Intelligent Vehicles Symposium (IV)</em>, 2014
               <br>
               <a href="http://dx.doi.org/10.1109/IVS.2014.6856537">paper</a> / 
@@ -419,6 +555,7 @@
               <br>
               <b>Junhwa Hur</b>, Seung-Nam Kang, and Seung-Woo Seo
               <br>
+              
               <em>Intelligent Vehicles Symposium (IV)</em>, 2013
               <br>
               <a href="http://dx.doi.org/10.1109/IVS.2013.6629645">paper</a> / 
@@ -452,6 +589,7 @@
               <br>
               <b>Junhwa Hur</b>
               <br>
+              
               <em>Master’s thesis, Seoul National University</em>, 2013
               <br>
               <a href="/pdfs/2013_ms_thesis.pdf">paper</a> / 
