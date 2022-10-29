@@ -12,4 +12,4 @@ equal_contribution: True
 venue: "NeurIPS"
 ---
 
-We introduce a voxel-based approach to surround-view depth estimation that improves metric-scale depth accuracy and can synthesize a depth map at arbitrary rotated views.
+Our voxel-based approach to surround-view depth estimation that improves metric-scale depth accuracy and can synthesize a depth map at arbitrary rotated views.
