@@ -24,7 +24,7 @@
               <h1>
                 Junhwa Hur
               </h1>
-              <p>Hello! I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
+              <p>Hello! I am a research scientist at Google in Cambridge, MA, USA. I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
               </p>
               <p style="text-align:center">
                 <a href="mailto:junhwa.hur@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -67,7 +67,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'research' %}
           <tr onmouseout="{{post.alias}}_stop()" onmouseover="{{post.alias}}_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
+            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:180px">
               <div class="one" style="width:auto; height:auto; max-width:100%;">{% if post.image_over %}
                 <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_mouseover'>
                 <img src={{post.image_over}} width="160"></div>{% endif %}{% if post.video_over %}
@@ -123,7 +123,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'project' %}
           <tr onmouseout="{{post.alias}}_stop()" onmouseover="{{post.alias}}_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
+            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:180px">
               <div class="one" style="width:auto; height:auto; max-width:100%;">
                 <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_image'>
                   <img src={{post.image_over}} width="160"></div>
