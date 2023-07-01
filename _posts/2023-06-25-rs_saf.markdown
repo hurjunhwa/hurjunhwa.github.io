@@ -1,0 +1,19 @@
+---
+layout: post
+alias: saf
+categories: research
+title: "Self-supervised AutoFlow"
+titlelink: https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Self-Supervised_AutoFlow_CVPR_2023_paper.pdf
+year: 2023
+image: /images/2023_saf_a.jpg
+image_over: /images/2023_saf_b.jpg
+authors: "Hsin-Ping Huang, Charles Herrmann, <b>Junhwa Hur</b>, Erika Lu, Kyle Sargent, Austin Stone, Ming-Hsuan Yang, Deqing Sun"
+venue: "CVPR"
+arxiv: https://arxiv.org/abs/2212.01762
+paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Self-Supervised_AutoFlow_CVPR_2023_paper.pdf
+supp: https://openaccess.thecvf.com/content/CVPR2023/supplemental/Huang_Self-Supervised_AutoFlow_CVPR_2023_supplemental.pdf
+code: https://autoflow-google.github.io
+
+---
+Self-supervised AutoFlow learns to generate an optical flow training set through self-supervision on the target domain. 
+
