@@ -1,0 +1,19 @@
+---
+layout: post
+alias: sddino
+categories: research
+title: "A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence"
+titlelink: https://sd-complements-dino.github.io/
+year: 2023, to appear
+image: /images/2023_sddino_a.jpg
+image_over: /images/2023_sddino_b.jpg
+authors: "Junyi Zhang, Charles Herrmann, <b>Junhwa Hur</b>, Luisa Polania Cabrera, Varun Jampani, Deqing Sun, and Ming-Hsuan Yang"
+venue: "NeurIPS"
+arxiv: https://arxiv.org/abs/2305.15347
+paper: https://arxiv.org/abs/2305.15347
+project: https://sd-complements-dino.github.io/
+supp: https://sd-complements-dino.github.io/sd_dino_files/Appendix.pdf
+code: https://github.com/Junyi42/sd-dino
+
+---
+

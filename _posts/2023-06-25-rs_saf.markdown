@@ -7,7 +7,7 @@ titlelink: https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Self-Supe
 year: 2023
 image: /images/2023_saf_a.jpg
 image_over: /images/2023_saf_b.jpg
-authors: "Hsin-Ping Huang, Charles Herrmann, <b>Junhwa Hur</b>, Erika Lu, Kyle Sargent, Austin Stone, Ming-Hsuan Yang, Deqing Sun"
+authors: "Hsin-Ping Huang, Charles Herrmann, <b>Junhwa Hur</b>, Erika Lu, Kyle Sargent, Austin Stone, Ming-Hsuan Yang, and Deqing Sun"
 venue: "CVPR"
 arxiv: https://arxiv.org/abs/2212.01762
 paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Self-Supervised_AutoFlow_CVPR_2023_paper.pdf
