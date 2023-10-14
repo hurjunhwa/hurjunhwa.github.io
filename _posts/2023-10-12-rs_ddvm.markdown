@@ -6,9 +6,10 @@ title: "The Surprising Effectiveness of Diffusion Models for Optical Flow and Mo
 titlelink: https://diffusion-vision.github.io/
 year: 2023, to appear
 image: /images/2023_ddvm_a.jpg
-image_over: /images/2023_ddvm_b.jpg
+image_over: /images/2023_ddvm_b.gif
 authors: "Saurabh Saxena, Charles Herrmann, <b>Junhwa Hur</b>, Abhishek Kar, Mohammad Norouzi, Deqing Sun, and David J. Fleet"
 venue: "NeurIPS"
+comment: "Oral presentation"
 arxiv: https://arxiv.org/abs/2306.01923
 paper: https://arxiv.org/abs/2306.01923
 project: https://diffusion-vision.github.io/
