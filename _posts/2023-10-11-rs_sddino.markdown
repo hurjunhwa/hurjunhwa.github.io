@@ -4,7 +4,7 @@ alias: sddino
 categories: research
 title: "A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence"
 titlelink: https://sd-complements-dino.github.io/
-year: 2023, to appear
+year: 2023
 image: /images/2023_sddino_a.jpg
 image_over: /images/2023_sddino_b.jpg
 authors: "Junyi Zhang, Charles Herrmann, <b>Junhwa Hur</b>, Luisa Polania Cabrera, Varun Jampani, Deqing Sun, and Ming-Hsuan Yang"
