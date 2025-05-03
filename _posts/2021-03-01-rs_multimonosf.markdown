@@ -5,8 +5,8 @@ categories: research
 title: "Self-Supervised Multi-Frame Monocular Scene Flow"
 titlelink: https://openaccess.thecvf.com/content/CVPR2021/papers/Hur_Self-Supervised_Multi-Frame_Monocular_Scene_Flow_CVPR_2021_paper.pdf
 year: 2021
-image: /images/2021_multimonosf.jpg
-image_over: /images/2021_multimonosf.gif
+image: /images/2021/2021_multimonosf.jpg
+image_over: /images/2021/2021_multimonosf.gif
 authors: "<b>Junhwa Hur</b> and Stefan Roth"
 venue: "CVPR"
 arxiv: https://arxiv.org/abs/2105.02216

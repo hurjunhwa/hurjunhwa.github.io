@@ -5,8 +5,8 @@ categories: research
 title: "MirrorFlow: Exploiting Symmetries in Joint Optical Flow and Occlusion Estimation"
 titlelink: http://openaccess.thecvf.com/content_ICCV_2017/papers/Hur_MirrorFlow_Exploiting_Symmetries_ICCV_2017_paper.pdf
 year: 2017
-image: /images/2017_mirrorflow.png
-image_over: /images/2017_mirrorflow_occ.png
+image: /images/2017/2017_mirrorflow.png
+image_over: /images/2017/2017_mirrorflow_occ.png
 authors: "<b>Junhwa Hur</b> and Stefan Roth"
 venue: "ICCV"
 arxiv: https://arxiv.org/abs/1708.05355

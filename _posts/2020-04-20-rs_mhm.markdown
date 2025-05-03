@@ -5,8 +5,8 @@ categories: research
 title: "Optical Flow Estimation in the Deep Learning Age"
 titlelink: https://arxiv.org/abs/2004.02853
 year: 2020
-image: /images/2020_mhm.jpg
-image_over: /images/2020_mhm.jpg
+image: /images/2020/2020_mhm.jpg
+image_over: /images/2020/2020_mhm.jpg
 authors: "<b>Junhwa Hur</b> and Stefan Roth"
 venue: "Modelling Human Motion, N. Noceti, A. Sciutti and F. Rea, Eds., Springer"
 arxiv: https://arxiv.org/abs/2004.02853

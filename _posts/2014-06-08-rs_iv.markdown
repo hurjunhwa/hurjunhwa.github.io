@@ -5,8 +5,8 @@ categories: research
 title: "Multi-lane Detection based on Accurate Geometric Lane Estimation in Highway Scenarios"
 titlelink: http://dx.doi.org/10.1109/IVS.2014.6856537
 year: 2014
-image: /images/2014_iv.png
-image_over: /images/2014_iv.png
+image: /images/2014/2014_iv.png
+image_over: /images/2014/2014_iv.png
 authors: "Seung-Nam Kang, Soo-Mok Lee, <b>Junhwa Hur</b>, and Seung-Woo Seo"
 venue: "Intelligent Vehicles Symposium (IV)"
 paper: http://dx.doi.org/10.1109/IVS.2014.6856537

@@ -1,0 +1,16 @@
+---
+layout: post
+alias: dmd
+categories: research
+title: "Zero-Shot Metric Depth with a Field-of-View Conditioned Diffusion Model"
+titlelink: https://diffusion-vision.github.io/dmd/
+year: 2024
+image: /images/2024/2024_dmd_a.jpg
+image_over: /images/2024/2024_dmd_b.jpg
+authors: "Saurabh Saxena, <b>Junhwa Hur</b>, Charles Herrmann, Deqing Sun, and David J. Fleet"
+venue: "ECCVW"
+arxiv: https://arxiv.org/abs/2312.13252
+paper: https://arxiv.org/abs/2312.13252
+project: https://diffusion-vision.github.io/dmd/
+
+---

@@ -5,8 +5,8 @@ categories: research
 title: "Joint Motion, Semantic Segmentation, Occlusion, and Depth Estimation"
 titlelink: https://tuprints.ulb.tu-darmstadt.de/21624/
 year: 2022
-image: /images/2022_diss.jpg
-image_over: /images/2022_diss.gif
+image: /images/2022/2022_diss.jpg
+image_over: /images/2022/2022_diss.gif
 authors: "<b>Junhwa Hur</b>"
 venue: "Ph.D. Dissertation, Technische Universität Darmstadt"
 paper: https://tuprints.ulb.tu-darmstadt.de/21624/

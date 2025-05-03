@@ -5,8 +5,8 @@ categories: research
 title: "Joint Optical Flow and Temporally Consistent Semantic Segmentation"
 titlelink: https://arxiv.org/pdf/1607.07716v1.pdf
 year: 2016
-image: /images/2016_jfs_input.jpg
-image_over: /images/2016_jfs_output.jpg
+image: /images/2016/2016_jfs_input.jpg
+image_over: /images/2016/2016_jfs_output.jpg
 authors: "<b>Junhwa Hur</b> and Stefan Roth"
 venue: "ECCV Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving (ECCVW)"
 comment: "Best paper award"

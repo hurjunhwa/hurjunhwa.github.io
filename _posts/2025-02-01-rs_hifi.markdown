@@ -1,0 +1,17 @@
+---
+layout: post
+alias: hifi
+categories: research
+title: "High-Resolution Frame Interpolation with Patch-based Cascaded Diffusion"
+titlelink: https://diffusion-vision.github.io/
+year: 2025
+image: /images/2025/2025_hifi.png
+image_over: /images/2025/2025_hifi.png
+authors: "<b>Junhwa Hur</b>*, Charles Herrmann*, Saurabh Saxena, Janne Kontkanen, Wei-Sheng (Jason) Lai, Yichang Shih, Michael Rubinstein, David J. Fleet, Deqing Sun"
+equal_contribution: True
+venue: "AAAI"
+arxiv: https://arxiv.org/abs/2410.11838
+paper: https://arxiv.org/abs/2410.11838
+project: https://hifi-diffusion.github.io/
+
+---

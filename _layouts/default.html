@@ -24,7 +24,7 @@
               <h1>
                 Junhwa Hur
               </h1>
-              <p>Hello! I am a research scientist at Google in Cambridge, MA, USA. I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
+              <p>Hello! I am a research scientist at Google DeepMind in Cambridge, MA, USA. I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
               </p>
               <p style="text-align:center">
                 <a href="mailto:junhwa.hur@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -54,36 +54,54 @@
 
 <!-- Research -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                I'm interested in computer vision and machine learning, especially understanding 3D dynamic scene from a monocular video through self-supervision.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'research' %}
+        {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'research' %}
           <tr onmouseout="{{post.alias}}_stop()" onmouseover="{{post.alias}}_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:180px">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">{% if post.image_over %}
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_mouseover'>
-                <img src={{post.image_over}} width="160"></div>{% endif %}{% if post.video_over %}
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_mouseover'>
-                <video width="160" muted autoplay loop><source src={{post.video_over}} type="video/mp4">Your browser does not support the video tag. 
-                </video></div>{% endif %}
-                <img src={{post.image}} width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="{{ post.image }}" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="{{post.alias}}_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  {% if post.video_over %}
+                    <video width="160" height="auto" muted loop preload="auto" style="display: block; width: 100%; height: auto;">
+                      <source src="{{ post.video_over }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  {% elsif post.image_over %}
+                    <img src="{{ post.image_over }}" width="160" style="display: block; width: 100%; height: auto;">
+                  {% endif %}
+                </div>
               </div>
+
               <script type="text/javascript">
                 function {{post.alias}}_start() {
-                  document.getElementById('{{post.alias}}_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('{{post.alias}}_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  {% if post.video_over %}
+                    const videoElement = mouseoverDiv.querySelector('video');
+                    if (videoElement) {videoElement.play();}
+                  {% endif %}
                 }
+
                 function {{post.alias}}_stop() {
-                  document.getElementById('{{post.alias}}_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('{{post.alias}}_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  {% if post.video_over %}
+                    const videoElement = mouseoverDiv.querySelector('video');
+                    if (videoElement) {
+                      videoElement.pause();
+                      // Optional: Reset video to the beginning when paused
+                      // videoElement.currentTime = 0;
+                    }
+                  {% endif %}
                 }
-                {{post.alias}}_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                {{post.alias}}_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -106,52 +124,25 @@
               {{ post.excerpt }}
             </td>
           </tr>
-          {% endif %}{% endfor %}{% endfor %}
-        </table>
-        <br>
-        <br>
+        {% endif %}{% endfor %}{% endfor %}
+      </table>
 
-<!-- Project -->
+
+<!-- Academic Service -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Project</h2>
+              <h2>Academic Service </h2>
+              <p>
+                • Area chair: ECCV 2024, CVPR 2025, ICCV 2025, NeurIPS 2025 <br>
+                • Outstanding reviewer awards: CVPR (2018, 2019, 2020, 2022, 2024), NeurIPS (2023), ICCV (2021), ECCV (2020), ACCV (2020)
+              </p>
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'project' %}
-          <tr onmouseout="{{post.alias}}_stop()" onmouseover="{{post.alias}}_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle;min-width:180px">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='{{post.alias}}_image'>
-                  <img src={{post.image_over}} width="160"></div>
-                <img src={{post.image}} width="160">
-              </div>
-              <script type="text/javascript">
-                function {{post.alias}}_start() {
-                  document.getElementById('{{post.alias}}_image').style.opacity = "1";
-                }
-                function {{post.alias}}_stop() {
-                  document.getElementById('{{post.alias}}_image').style.opacity = "0";
-                }
-                {{post.alias}}_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">
-              {% if post.titlelink %}<a href="{{post.titlelink}}"><h3>{{post.title}}</h3></a>{% else %}<h3>{{post.title}}</h3>{% endif %}
-              <br>
-              <em>{{post.venue}}</em>, {{post.year}} {% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
-              <br>
-              {% if post.video %}<a href="{{post.video}}">video</a>{% endif %}{% if post.project %} / 
-              <a href="{{post.project}}">project</a>{% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}{% endfor %}{% endfor %}
-        </table>
+
+
         <br>
         <br>
         <br>
