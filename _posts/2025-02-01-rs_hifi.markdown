@@ -3,7 +3,7 @@ layout: post
 alias: hifi
 categories: research
 title: "High-Resolution Frame Interpolation with Patch-based Cascaded Diffusion"
-titlelink: https://diffusion-vision.github.io/
+titlelink: https://hifi-diffusion.github.io/
 year: 2025
 image: /images/2025/2025_hifi.png
 image_over: /images/2025/2025_hifi.png
