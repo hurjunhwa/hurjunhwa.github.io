@@ -24,12 +24,12 @@
               <h1>
                 Junhwa Hur
               </h1>
-              <p>Hello! I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
+              <p>Hello! I am a research scientist at Google DeepMind in Cambridge, MA, USA. I received my Ph.D. at <a href="http://www.tu-darmstadt.de/index.en.jsp">Technische Universität Darmstadt</a>, where I was supervised by <a href="https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp">Prof. Stefan Roth Ph.D.</a> at <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference group</a>. I received my M.Sc. at Seoul National University and B.Sc. at POSTECH.
               </p>
               <p style="text-align:center">
                 <a href="mailto:junhwa.hur@gmail.com">Email</a> &nbsp;/&nbsp;
                 <a href="/pdfs/cv.pdf">CV</a>  &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=z4dNJdkAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=z4dNJdkAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://github.com/hurjunhwa">Github</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/junhwa-hur"> LinkedIn </a>
               </p>
@@ -40,9 +40,8 @@
           </tr>
         </table>
 
-
 <!-- News -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<!--         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
@@ -53,68 +52,638 @@
               <li>05/2022: Successfully defended my Ph.D. dissertation!</li></ul>
             </td>
           </tr>
-        </table>
+        </table> -->
 
-<!-- Research -->
+<!-- Academic Service -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2>Academic Service </h2>
               <p>
-                I'm interested in computer vision and machine learning, especially understanding 3D dynamic scene from a monocular video through self-supervision.
+                • Area chair: ECCV 2024, CVPR 2025, ICCV 2025, NeurIPS 2025 <br>
+                • Outstanding reviewer awards: CVPR (2018, 2019, 2020, 2022, 2024), NeurIPS (2023), ICCV (2021), ECCV (2020), ACCV (2020)
               </p>
             </td>
           </tr>
         </table>
 
+<!-- Research -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          
-          <tr onmouseout="surrounddepth_stop()" onmouseover="surrounddepth_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='surrounddepth_mouseover'>
-                <img src=/images/2022_vf.gif width="160"></div>
-                <img src=/images/2022_vf.jpg width="160">
-              </div>
-              <script type="text/javascript">
-                function surrounddepth_start() {
-                  document.getElementById('surrounddepth_mouseover').style.opacity = "1";
-                }
-                function surrounddepth_stop() {
-                  document.getElementById('surrounddepth_mouseover').style.opacity = "0";
-                }
-                surrounddepth_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <h3>Self-Supervised Surround-View Depth Estimation with Volumetric Feature Fusion</h3>
-              <br>
-              Jung Hee Kim*, <b>Junhwa Hur</b>*, Tien Phuoc Nguyen, and Seong-Gyun Jeong
-              <br>
-              <em>*Equal contribution</font><br>
-              <em>NeurIPS</em>, 2022
-              <br><font color="gray">coming soon!</font>
-              <p>We introduce a voxel-based approach to surround-view depth estimation that improves metric-scale depth accuracy and can synthesize a depth map at arbitrary rotated views.</p>
-
+          <tr>
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <h2>Research </h2>
             </td>
           </tr>
           
-          <tr onmouseout="phddissertation_stop()" onmouseover="phddissertation_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='phddissertation_mouseover'>
-                <video width="160" muted autoplay loop><source src=/images/comingsoon.png type="video/mp4">Your browser does not support the video tag. 
-                </video></div>
-                <img src=/images/comingsoon.png width="160">
+          <tr onmouseout="hifi_stop()" onmouseover="hifi_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2025/2025_hifi.png" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="hifi_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2025/2025_hifi.png" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
+              <script type="text/javascript">
+                function hifi_start() {
+                  const mouseoverDiv = document.getElementById('hifi_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function hifi_stop() {
+                  const mouseoverDiv = document.getElementById('hifi_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                hifi_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://diffusion-vision.github.io/"><h3>High-Resolution Frame Interpolation with Patch-based Cascaded Diffusion</h3></a>
+              <br>
+              <b>Junhwa Hur</b>*, Charles Herrmann*, Saurabh Saxena, Janne Kontkanen, Wei-Sheng (Jason) Lai, Yichang Shih, Michael Rubinstein, David J. Fleet, Deqing Sun
+              <br>
+              <em>*Equal contribution</em><br>
+              <em>AAAI</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2410.11838">paper</a> / 
+              <a href="https://arxiv.org/abs/2410.11838">arxiv</a> / 
+              <a href="https://hifi-diffusion.github.io/">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="lumiere_stop()" onmouseover="lumiere_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2024/2024_lumiere.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="lumiere_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <video width="160" height="auto" muted loop preload="auto" style="display: block; width: 100%; height: auto;">
+                      <source src="/images/2024/2024_lumiere.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function lumiere_start() {
+                  const mouseoverDiv = document.getElementById('lumiere_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                    const videoElement = mouseoverDiv.querySelector('video');
+                    if (videoElement) {videoElement.play();}
+                  
+                }
+
+                function lumiere_stop() {
+                  const mouseoverDiv = document.getElementById('lumiere_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                    const videoElement = mouseoverDiv.querySelector('video');
+                    if (videoElement) {
+                      videoElement.pause();
+                      // Optional: Reset video to the beginning when paused
+                      // videoElement.currentTime = 0;
+                    }
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                lumiere_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://lumiere-video.github.io/"><h3>Lumiere: A Space-Time Diffusion Model for Video Generation</h3></a>
+              <br>
+              Omer Bar-Tal, Hila Chefer, Omer Tov, Charles Herrmann, Roni Paiss, Shiran Zada, Ariel Ephrat, <b>Junhwa Hur</b>, Guanghui Liu, Amit Raj, Yuanzhen Li, Michael Rubinstein, Tomer Michaeli, Oliver Wang, Deqing Sun, Tali Dekel, Inbar Mosseri
+              <br>
+              
+              <em>SIGGRAPH Asia 2024</em>, 2024
+              <br>
+              <a href="https://dl.acm.org/doi/full/10.1145/3680528.3687614">paper</a> / 
+              <a href="https://arxiv.org/abs/2401.12945">arxiv</a> / 
+              <a href="https://lumiere-video.github.io/">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="telling_left_from_right_stop()" onmouseover="telling_left_from_right_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2024/2024_leftright_a.png" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="telling_left_from_right_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2024/2024_leftright_b.png" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function telling_left_from_right_start() {
+                  const mouseoverDiv = document.getElementById('telling_left_from_right_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function telling_left_from_right_stop() {
+                  const mouseoverDiv = document.getElementById('telling_left_from_right_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                telling_left_from_right_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://telling-left-from-right.github.io/"><h3>Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence</h3></a>
+              <br>
+              Junyi Zhang, Charles Herrmann, <b>Junhwa Hur</b>, Eric Chen, Varun Jampani, Deqing Sun, and Ming-Hsuan Yang
+              <br>
+              
+              <em>NeurIPS</em>, 2024
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Telling_Left_from_Right_Identifying_Geometry-Aware_Semantic_Correspondence_CVPR_2024_paper.pdf">paper</a> / 
+              <a href="https://arxiv.org/abs/2311.17034">arxiv</a> / 
+              <a href="https://telling-left-from-right.github.io/">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="wonderjourney_stop()" onmouseover="wonderjourney_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="images/2024/2024_wonderjourney.png" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="wonderjourney_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <video width="160" height="auto" muted loop preload="auto" style="display: block; width: 100%; height: auto;">
+                      <source src="images/2024/2024_wonderjourney.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function wonderjourney_start() {
+                  const mouseoverDiv = document.getElementById('wonderjourney_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                    const videoElement = mouseoverDiv.querySelector('video');
+                    if (videoElement) {videoElement.play();}
+                  
+                }
+
+                function wonderjourney_stop() {
+                  const mouseoverDiv = document.getElementById('wonderjourney_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                    const videoElement = mouseoverDiv.querySelector('video');
+                    if (videoElement) {
+                      videoElement.pause();
+                      // Optional: Reset video to the beginning when paused
+                      // videoElement.currentTime = 0;
+                    }
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                wonderjourney_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://kovenyu.com/WonderJourney"><h3>WonderJourney: Going from Anywhere to Everywhere</h3></a>
+              <br>
+              Hong-Xing Yu, Haoyi Duan, <b>Junhwa Hur</b>, Kyle Sargent, Michael Rubinstein, William T. Freeman, Forrester Cole, Deqing Sun, Noah Snavely, Jiajun Wu, Charles Herrmann
+              <br>
+              
+              <em>CVPR</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2312.03884">paper</a> / 
+              <a href="https://arxiv.org/abs/2312.03884">arxiv</a> / 
+              <a href="https://kovenyu.com/WonderJourney">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="boundaryattention_stop()" onmouseover="boundaryattention_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2024/2024_boundaryattention_a.png" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="boundaryattention_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2024/2024_boundaryattention_b.png" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function boundaryattention_start() {
+                  const mouseoverDiv = document.getElementById('boundaryattention_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function boundaryattention_stop() {
+                  const mouseoverDiv = document.getElementById('boundaryattention_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                boundaryattention_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://boundaryattention.github.io/"><h3>Boundary Attention: Learning Curves, Corners, Junctions and Grouping</h3></a>
+              <br>
+              Mia Gaia Polansky, Charles Herrmann, <b>Junhwa Hur</b>, Deqing Sun, Dor Verbin, Todd Zickler
+              <br>
+              
+              <em>ECCVW</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2401.00935">paper</a> / 
+              <a href="https://arxiv.org/abs/2401.00935">arxiv</a> / 
+              <a href="https://boundaryattention.github.io/">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="dmd_stop()" onmouseover="dmd_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2024/2024_dmd_a.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="dmd_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2024/2024_dmd_b.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function dmd_start() {
+                  const mouseoverDiv = document.getElementById('dmd_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function dmd_stop() {
+                  const mouseoverDiv = document.getElementById('dmd_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                dmd_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://diffusion-vision.github.io/dmd/"><h3>Zero-Shot Metric Depth with a Field-of-View Conditioned Diffusion Model</h3></a>
+              <br>
+              Saurabh Saxena, <b>Junhwa Hur</b>, Charles Herrmann, Deqing Sun, and David J. Fleet
+              <br>
+              
+              <em>ECCVW</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2312.13252">paper</a> / 
+              <a href="https://arxiv.org/abs/2312.13252">arxiv</a> / 
+              <a href="https://diffusion-vision.github.io/dmd/">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="ddvm_stop()" onmouseover="ddvm_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2023/2023_ddvm_a.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="ddvm_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2023/2023_ddvm_b.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function ddvm_start() {
+                  const mouseoverDiv = document.getElementById('ddvm_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function ddvm_stop() {
+                  const mouseoverDiv = document.getElementById('ddvm_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                ddvm_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://diffusion-vision.github.io/"><h3>The Surprising Effectiveness of Diffusion Models for Optical Flow and Monocular Depth Estimation</h3></a>
+              <br>
+              Saurabh Saxena, Charles Herrmann, <b>Junhwa Hur</b>, Abhishek Kar, Mohammad Norouzi, Deqing Sun, and David J. Fleet
+              <br>
+              
+              <em>NeurIPS</em>, 2023<font color="#FA4841"><b>&nbsp;&nbsp;Oral presentation</b></font>
+              <br>
+              <a href="https://arxiv.org/abs/2306.01923">paper</a> / 
+              <a href="https://arxiv.org/abs/2306.01923">arxiv</a> / 
+              <a href="https://diffusion-vision.github.io/">project</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="sddino_stop()" onmouseover="sddino_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2023/2023_sddino_a.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="sddino_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2023/2023_sddino_b.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function sddino_start() {
+                  const mouseoverDiv = document.getElementById('sddino_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function sddino_stop() {
+                  const mouseoverDiv = document.getElementById('sddino_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                sddino_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://sd-complements-dino.github.io/"><h3>A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence</h3></a>
+              <br>
+              Junyi Zhang, Charles Herrmann, <b>Junhwa Hur</b>, Luisa Polania Cabrera, Varun Jampani, Deqing Sun, and Ming-Hsuan Yang
+              <br>
+              
+              <em>NeurIPS</em>, 2023
+              <br>
+              <a href="https://arxiv.org/abs/2305.15347">paper</a> / 
+              <a href="https://sd-complements-dino.github.io/sd_dino_files/Appendix.pdf">supp</a> / 
+              <a href="https://arxiv.org/abs/2305.15347">arxiv</a> / 
+              <a href="https://sd-complements-dino.github.io/">project</a> / 
+              <a href="https://github.com/Junyi42/sd-dino">code</a>
+              
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="saf_stop()" onmouseover="saf_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2023/2023_saf_a.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="saf_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2023/2023_saf_b.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function saf_start() {
+                  const mouseoverDiv = document.getElementById('saf_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function saf_stop() {
+                  const mouseoverDiv = document.getElementById('saf_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                saf_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Self-Supervised_AutoFlow_CVPR_2023_paper.pdf"><h3>Self-supervised AutoFlow</h3></a>
+              <br>
+              Hsin-Ping Huang, Charles Herrmann, <b>Junhwa Hur</b>, Erika Lu, Kyle Sargent, Austin Stone, Ming-Hsuan Yang, and Deqing Sun
+              <br>
+              
+              <em>CVPR</em>, 2023
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Self-Supervised_AutoFlow_CVPR_2023_paper.pdf">paper</a> / 
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/supplemental/Huang_Self-Supervised_AutoFlow_CVPR_2023_supplemental.pdf">supp</a> / 
+              <a href="https://arxiv.org/abs/2212.01762">arxiv</a> / 
+              <a href="https://autoflow-google.github.io">code</a>
+              <p>Self-supervised AutoFlow learns to generate an optical flow training set through self-supervision on the target domain.</p>
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="raftmsf_stop()" onmouseover="raftmsf_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2022/2022_raftmsf_a.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="raftmsf_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2022/2022_raftmsf_b.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function raftmsf_start() {
+                  const mouseoverDiv = document.getElementById('raftmsf_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function raftmsf_stop() {
+                  const mouseoverDiv = document.getElementById('raftmsf_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                raftmsf_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://arxiv.org/abs/2205.01568"><h3>RAFT-MSF: Self-Supervised Monocular Scene Flow Using Recurrent Optimizer</h3></a>
+              <br>
+              Bayram Bayramli, <b>Junhwa Hur</b>, and Hongtao Lu
+              <br>
+              
+              <em>IJCV</em>, 2023
+              <br>
+              <a href="https://doi.org/10.1007/s11263-023-01828-4">paper</a> / 
+              <a href="https://arxiv.org/abs/2205.01568">arxiv</a>
+              <p>For self-supervised monocular scene flow, our RAFT-backbone-based approach significantly improves the scene flow accuracy and even outperforms a semi-supervised method.</p>
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="surrounddepth_stop()" onmouseover="surrounddepth_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2022/2022_vf.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="surrounddepth_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2022/2022_vf.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
+              <script type="text/javascript">
+                function surrounddepth_start() {
+                  const mouseoverDiv = document.getElementById('surrounddepth_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
+                }
+
+                function surrounddepth_stop() {
+                  const mouseoverDiv = document.getElementById('surrounddepth_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
+                }
+                // Initial call to ensure the mouseover content is hidden on page load
+                surrounddepth_stop();
+              </script>
+            </td>
+            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+              <a href="https://openreview.net/forum?id=0PfIQs-ttQQ"><h3>Self-Supervised Surround-View Depth Estimation with Volumetric Feature Fusion</h3></a>
+              <br>
+              Jung Hee Kim*, <b>Junhwa Hur</b>*, Tien Phuoc Nguyen, and Seong-Gyun Jeong
+              <br>
+              <em>*Equal contribution</em><br>
+              <em>NeurIPS</em>, 2022
+              <br>
+              <a href="https://openreview.net/forum?id=0PfIQs-ttQQ">paper</a> / 
+              <a href="https://github.com/42dot/VFDepth">code</a>
+              <p>Our voxel-based approach to surround-view depth estimation improves metric-scale depth accuracy and can synthesize a depth map at arbitrary rotated views.</p>
+
+            </td>
+          </tr>
+        
+          <tr onmouseout="phddissertation_stop()" onmouseover="phddissertation_start()">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2022/2022_diss.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="phddissertation_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2022/2022_diss.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
+              </div>
+
               <script type="text/javascript">
                 function phddissertation_start() {
-                  document.getElementById('phddissertation_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('phddissertation_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function phddissertation_stop() {
-                  document.getElementById('phddissertation_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('phddissertation_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                phddissertation_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                phddissertation_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -130,85 +699,89 @@
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="maskgrasp_stop()" onmouseover="maskgrasp_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='maskgrasp_mouseover'>
-                <video width="160" muted autoplay loop><source src=/images/comingsoon.png type="video/mp4">Your browser does not support the video tag. 
-                </video></div>
-                <img src=/images/comingsoon.png width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2022/2022_maskgrasp.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="maskgrasp_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2022/2022_maskgrasp.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function maskgrasp_start() {
-                  document.getElementById('maskgrasp_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('maskgrasp_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function maskgrasp_stop() {
-                  document.getElementById('maskgrasp_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('maskgrasp_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                maskgrasp_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                maskgrasp_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <h3>MasKGrasp: Mask-based Grasping for Scenes with Multiple General Real-world Objects</h3>
+              <a href="https://ieeexplore.ieee.org/document/9982130"><h3>MasKGrasp: Mask-based Grasping for Scenes with Multiple General Real-world Objects</h3></a>
               <br>
               Junho Lee, <b>Junhwa Hur</b>, Inwoo Hwang, and Young Min Kim
               <br>
               
               <em>IROS</em>, 2022
-              <br><font color="gray">coming soon!</font>
-              
+              <br>
+              <a href="https://ieeexplore.ieee.org/document/9982130">paper</a> / 
+              <a href="https://www.youtube.com/watch?v=iWvstHPu97Y">video</a>
+              <p>We introduce a mask-based grasping
+method that discerns multiple transparent and opaque objects and finds the optimal grasp position avoiding clutter.</p>
 
             </td>
           </tr>
-          
-          <tr onmouseout="raftmsf_stop()" onmouseover="raftmsf_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='raftmsf_mouseover'>
-                <img src=/images/2022_raftmsf_b.jpg width="160"></div>
-                <img src=/images/2022_raftmsf_a.jpg width="160">
-              </div>
-              <script type="text/javascript">
-                function raftmsf_start() {
-                  document.getElementById('raftmsf_mouseover').style.opacity = "1";
-                }
-                function raftmsf_stop() {
-                  document.getElementById('raftmsf_mouseover').style.opacity = "0";
-                }
-                raftmsf_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="https://arxiv.org/abs/2205.01568"><h3>RAFT-MSF: Self-Supervised Monocular Scene Flow Using Recurrent Optimizer</h3></a>
-              <br>
-              Bayram Bayramli, <b>Junhwa Hur</b>, and Hongtao Lu
-              <br>
-              
-              <em>arXiv preprint</em>, 2022
-              <br>
-              <a href="https://arxiv.org/abs/2205.01568">paper</a>
-              <p>For self-supervised monocular scene flow, our RAFT-backbone-based approach significantly improves the scene flow accuracy and even outperforms a semi-supervised method.</p>
-
-            </td>
-          </tr>
-          
+        
           <tr onmouseout="multimonosf_stop()" onmouseover="multimonosf_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='multimonosf_mouseover'>
-                <video width="160" muted autoplay loop><source src=/images/2021_multimonosf.mp4 type="video/mp4">Your browser does not support the video tag. 
-                </video></div>
-                <img src=/images/2021_multimonosf.jpg width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2021/2021_multimonosf.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="multimonosf_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2021/2021_multimonosf.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function multimonosf_start() {
-                  document.getElementById('multimonosf_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('multimonosf_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function multimonosf_stop() {
-                  document.getElementById('multimonosf_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('multimonosf_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                multimonosf_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                multimonosf_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -228,23 +801,39 @@
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="monosf_stop()" onmouseover="monosf_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='monosf_mouseover'>
-                <video width="160" muted autoplay loop><source src=/images/2020_monosf.mp4 type="video/mp4">Your browser does not support the video tag. 
-                </video></div>
-                <img src=/images/2020_monosf.jpg width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2020/2020_monosf.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="monosf_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2020/2020_monosf.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function monosf_start() {
-                  document.getElementById('monosf_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('monosf_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function monosf_stop() {
-                  document.getElementById('monosf_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('monosf_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                monosf_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                monosf_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -264,22 +853,39 @@
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="mhm_stop()" onmouseover="mhm_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='mhm_mouseover'>
-                <img src=/images/2020_mhm.jpg width="160"></div>
-                <img src=/images/2020_mhm.jpg width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2020/2020_mhm.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="mhm_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2020/2020_mhm.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function mhm_start() {
-                  document.getElementById('mhm_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('mhm_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function mhm_stop() {
-                  document.getElementById('mhm_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('mhm_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                mhm_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                mhm_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -296,23 +902,39 @@
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="irr_stop()" onmouseover="irr_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='irr_mouseover'>
-                <video width="160" muted autoplay loop><source src=/images/2019_irr.mp4 type="video/mp4">Your browser does not support the video tag. 
-                </video></div>
-                <img src=/images/2019_irr.png width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2019/2019_irr.png" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="irr_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2019/2019_irr.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function irr_start() {
-                  document.getElementById('irr_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('irr_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function irr_stop() {
-                  document.getElementById('irr_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('irr_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                irr_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                irr_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -331,56 +953,90 @@
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="unflow_stop()" onmouseover="unflow_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='unflow_mouseover'>
-                <img src=/images/2018_unflow_flow.jpg width="160"></div>
-                <img src=/images/2018_unflow_img.jpg width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2018/2018_unflow_img.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="unflow_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2018/2018_unflow_flow.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function unflow_start() {
-                  document.getElementById('unflow_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('unflow_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function unflow_stop() {
-                  document.getElementById('unflow_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('unflow_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                unflow_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                unflow_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16502/16319"><h3>UnFlow: Unsupervised Learning of Optical Flow with a Bidirectional Census Loss</h3></a>
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/view/12276"><h3>UnFlow: Unsupervised Learning of Optical Flow with a Bidirectional Census Loss</h3></a>
               <br>
               Simon Meister, <b>Junhwa Hur</b> and Stefan Roth
               <br>
               
               <em>AAAI</em>, 2018<font color="#FA4841"><b>&nbsp;&nbsp;Oral presentation</b></font>
               <br>
-              <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16502/16319">paper</a> / 
-              <a href="https://arxiv.org/pdf/1711.07837.pdf">arxiv</a> / 
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/view/12276">paper</a> / 
+              <a href="https://arxiv.org/abs/1711.07837">arxiv</a> / 
               <a href="https://github.com/simonmeister/UnFlow">code</a> / 
               <a href="http://simonmeister.org/files/slides_unflow_aaai18.pdf">slide</a>
               <p>By directly training on the target domain with an improved unsupervised loss, our method outperforms a supervised method that is pre-trained on a synthetic dataset.</p>
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="mirrorflow_stop()" onmouseover="mirrorflow_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='mirrorflow_mouseover'>
-                <img src=/images/2017_mirrorflow_occ.png width="160"></div>
-                <img src=/images/2017_mirrorflow.png width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2017/2017_mirrorflow.png" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="mirrorflow_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2017/2017_mirrorflow_occ.png" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function mirrorflow_start() {
-                  document.getElementById('mirrorflow_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('mirrorflow_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function mirrorflow_stop() {
-                  document.getElementById('mirrorflow_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('mirrorflow_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                mirrorflow_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                mirrorflow_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -400,22 +1056,39 @@
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="jfs_stop()" onmouseover="jfs_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='jfs_mouseover'>
-                <img src=/images/2016_jfs_output.jpg width="160"></div>
-                <img src=/images/2016_jfs_input.jpg width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2016/2016_jfs_input.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="jfs_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2016/2016_jfs_output.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function jfs_start() {
-                  document.getElementById('jfs_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('jfs_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function jfs_stop() {
-                  document.getElementById('jfs_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('jfs_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                jfs_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                jfs_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -427,29 +1100,45 @@
               <em>ECCV Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving (ECCVW)</em>, 2016<font color="#FA4841"><b>&nbsp;&nbsp;Best paper award</b></font>
               <br>
               <a href="https://doi.org/10.1007/978-3-319-46604-0_12">paper</a> / 
-              <a href="https://arxiv.org/pdf/1607.07716v1.pdf">arxiv</a> / 
+              <a href="https://arxiv.org/abs/1607.07716">arxiv</a> / 
               <a href="/pdfs/2016_eccvws_poster.pdf">poster</a>
               <p>We propose a method for the joint estimation of optical flow and temporally consistent semantic segmentation, which closely connects the two problem domains and allows each task leverage the other.</p>
 
             </td>
           </tr>
-          
+        
           <tr onmouseout="gdsp_stop()" onmouseover="gdsp_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='gdsp_mouseover'>
-                <video width="160" muted autoplay loop><source src=/images/2015_gdsp.mp4 type="video/mp4">Your browser does not support the video tag. 
-                </video></div>
-                <img src=/images/2015_gdsp.jpg width="160">
+            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
+                <img src="/images/2015/2015_gdsp.jpg" width="160" style="display: block; width: 100%; height: auto;">
+                <div class="two" id="gdsp_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+                  
+                    <img src="/images/2015/2015_gdsp.gif" width="160" style="display: block; width: 100%; height: auto;">
+                  
+                </div>
               </div>
+
               <script type="text/javascript">
                 function gdsp_start() {
-                  document.getElementById('gdsp_mouseover').style.opacity = "1";
+                  const mouseoverDiv = document.getElementById('gdsp_mouseover');
+                  if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "1";
+
+                  
                 }
+
                 function gdsp_stop() {
-                  document.getElementById('gdsp_mouseover').style.opacity = "0";
+                  const mouseoverDiv = document.getElementById('gdsp_mouseover');
+                   if (!mouseoverDiv) return;
+
+                  mouseoverDiv.style.opacity = "0";
+
+                  // Only try to pause video if video_over exists for this post
+                  
                 }
-                gdsp_stop()
+                // Initial call to ensure the mouseover content is hidden on page load
+                gdsp_stop();
               </script>
             </td>
             <td style="padding:2.0%;width:75%;vertical-align:middle">              
@@ -468,212 +1157,9 @@
 
             </td>
           </tr>
-          
-          <tr onmouseout="3ddsp_stop()" onmouseover="3ddsp_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='3ddsp_mouseover'>
-                <img src=/images/2014_3ddsp.png width="160"></div>
-                <img src=/images/2014_3ddsp.png width="160">
-              </div>
-              <script type="text/javascript">
-                function 3ddsp_start() {
-                  document.getElementById('3ddsp_mouseover').style.opacity = "1";
-                }
-                function 3ddsp_stop() {
-                  document.getElementById('3ddsp_mouseover').style.opacity = "0";
-                }
-                3ddsp_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="https://doi.org/10.1007/978-3-319-14249-4_12"><h3>3D Deformable Spatial Pyramid for Dense 3D Motion Flow of Deformable Object</h3></a>
-              <br>
-              <b>Junhwa Hur</b>, Hwasup Lim, and Sang Chul Ahn
-              <br>
-              
-              <em>International Symposium on Visual Computing (ISVC)</em>, 2014<font color="#FA4841"><b>&nbsp;&nbsp;Oral presentation</b></font>
-              <br>
-              <a href="https://doi.org/10.1007/978-3-319-14249-4_12">paper</a> / 
-              <a href="https://sites.google.com/site/hurjunhwa/research/3d_dsp_14">project</a>
-              
-
-            </td>
-          </tr>
-          
-          <tr onmouseout="iv2014_stop()" onmouseover="iv2014_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='iv2014_mouseover'>
-                <img src=/images/2014_iv.png width="160"></div>
-                <img src=/images/2014_iv.png width="160">
-              </div>
-              <script type="text/javascript">
-                function iv2014_start() {
-                  document.getElementById('iv2014_mouseover').style.opacity = "1";
-                }
-                function iv2014_stop() {
-                  document.getElementById('iv2014_mouseover').style.opacity = "0";
-                }
-                iv2014_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="http://dx.doi.org/10.1109/IVS.2014.6856537"><h3>Multi-lane Detection based on Accurate Geometric Lane Estimation in Highway Scenarios</h3></a>
-              <br>
-              Seung-Nam Kang, Soo-Mok Lee, <b>Junhwa Hur</b>, and Seung-Woo Seo
-              <br>
-              
-              <em>Intelligent Vehicles Symposium (IV)</em>, 2014
-              <br>
-              <a href="http://dx.doi.org/10.1109/IVS.2014.6856537">paper</a> / 
-              <a href="https://www.youtube.com/watch?v=RrxSSgeDdzk">video</a>
-              
-
-            </td>
-          </tr>
-          
-          <tr onmouseout="iv2013_stop()" onmouseover="iv2013_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='iv2013_mouseover'>
-                <img src=/images/2013_iv.png width="160"></div>
-                <img src=/images/2013_iv.png width="160">
-              </div>
-              <script type="text/javascript">
-                function iv2013_start() {
-                  document.getElementById('iv2013_mouseover').style.opacity = "1";
-                }
-                function iv2013_stop() {
-                  document.getElementById('iv2013_mouseover').style.opacity = "0";
-                }
-                iv2013_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="http://dx.doi.org/10.1109/IVS.2013.6629645"><h3>Multi-lane Detection in Urban Driving Environments using Conditional Random Fields</h3></a>
-              <br>
-              <b>Junhwa Hur</b>, Seung-Nam Kang, and Seung-Woo Seo
-              <br>
-              
-              <em>Intelligent Vehicles Symposium (IV)</em>, 2013
-              <br>
-              <a href="http://dx.doi.org/10.1109/IVS.2013.6629645">paper</a> / 
-              <a href="https://sites.google.com/site/hurjunhwa/research/mld_iv13">project</a> / 
-              <a href="https://github.com/hurjunhwa/mld_crf">code</a> / 
-              <a href="https://www.youtube.com/watch?v=8LEUHUdqxag&feature=emb_title&ab_channel=JunhwaHur">video</a>
-              
-
-            </td>
-          </tr>
-          
-          <tr onmouseout="msthesis_stop()" onmouseover="msthesis_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='msthesis_mouseover'>
-                <img src=/images/2013_ms_thesis.jpg width="160"></div>
-                <img src=/images/2013_ms_thesis.jpg width="160">
-              </div>
-              <script type="text/javascript">
-                function msthesis_start() {
-                  document.getElementById('msthesis_mouseover').style.opacity = "1";
-                }
-                function msthesis_stop() {
-                  document.getElementById('msthesis_mouseover').style.opacity = "0";
-                }
-                msthesis_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
-              <a href="/pdfs/2013_ms_thesis.pdf"><h3>Multi-lane Detection in Highway and Urban Driving Environment</h3></a>
-              <br>
-              <b>Junhwa Hur</b>
-              <br>
-              
-              <em>Master’s thesis, Seoul National University</em>, 2013
-              <br>
-              <a href="/pdfs/2013_ms_thesis.pdf">paper</a> / 
-              <a href="https://sites.google.com/site/hurjunhwa/research/mld_highway">project</a>
-              
-
-            </td>
-          </tr>
-          
-        </table>
-        <br>
-        <br>
-
-<!-- Project -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Project</h2>
-            </td>
-          </tr>
+        
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          
-          <tr onmouseout="deformable_kist_stop()" onmouseover="deformable_kist_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='deformable_kist_image'>
-                  <img src=/images/2015_deformable.png width="160"></div>
-                <img src=/images/2015_deformable.png width="160">
-              </div>
-              <script type="text/javascript">
-                function deformable_kist_start() {
-                  document.getElementById('deformable_kist_image').style.opacity = "1";
-                }
-                function deformable_kist_stop() {
-                  document.getElementById('deformable_kist_image').style.opacity = "0";
-                }
-                deformable_kist_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">
-              <a href="https://www.youtube.com/watch?v=tJVxF_mcmZ4"><h3>Deformable Object Modeling</h3></a>
-              <br>
-              <em>IMRC, Korea Institute of Science and Technology (KIST)</em>, 2015 
-              <br>
-              <a href="https://www.youtube.com/watch?v=tJVxF_mcmZ4">video</a>
-              <p></p>
-              <p>Researching on modeling deformable object: pose estimation, correspondence search, and loop closure</p>
-
-            </td>
-          </tr>
-          
-          <tr onmouseout="korea_avc_stop()" onmouseover="korea_avc_start()">
-            <td style="padding:2.0%;width:25%;vertical-align:middle">
-              <div class="one" style="width:auto; height:auto; max-width:100%;">
-                <div class="two" style="width:auto; height:auto; max-width:100%;" id='korea_avc_image'>
-                  <img src=/images/2015_korea_avc.png width="160"></div>
-                <img src=/images/2015_korea_avc.png width="160">
-              </div>
-              <script type="text/javascript">
-                function korea_avc_start() {
-                  document.getElementById('korea_avc_image').style.opacity = "1";
-                }
-                function korea_avc_stop() {
-                  document.getElementById('korea_avc_image').style.opacity = "0";
-                }
-                korea_avc_stop()
-              </script>
-            </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">
-              <a href="https://sites.google.com/site/hurjunhwa/research/korea_avc_13"><h3>Korea Autonomous Vehicle Contest 2013</h3></a>
-              <br>
-              <em>VILab, Seoul National University</em>, 2013 <font color="#FA4841"><b>&nbsp;&nbsp;2nd-place prize</b></font>
-              <br>
-              <a href="https://www.youtube.com/watch?v=8j-Ew4paNM0">video</a> / 
-              <a href="https://sites.google.com/site/hurjunhwa/research/korea_avc_13">project</a>
-              <p></p>
-              <p>Researching on computer vision system for autonomous driving: lane/speed-bump/stop-line detection, camera-lidar sensor fusion</p>
-
-            </td>
-          </tr>
-          
-        </table>
         <br>
         <br>
         <br>
