@@ -12,7 +12,7 @@ venue: "ECCVW"
 arxiv: https://arxiv.org/abs/2401.00935
 paper: https://arxiv.org/abs/2401.00935
 project: https://boundaryattention.github.io/
-
+code: https://github.com/google-research/scenic/tree/main/scenic/projects/boundary_attention
 ---
 
 

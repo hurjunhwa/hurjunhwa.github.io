@@ -11,7 +11,7 @@ authors: "Daniel Geng, Charles Herrmann, <b>Junhwa Hur</b>, Forrester Cole, Sere
 venue: "CVPR"
 comment: "Oral presentation"
 arxiv: https://arxiv.org/abs/2412.02700
-paper: https://arxiv.org/abs/2412.02700
+paper: https://openaccess.thecvf.com/content/CVPR2025/papers/Geng_Motion_Prompting_Controlling_Video_Generation_with_Motion_Trajectories_CVPR_2025_paper.pdf
 project: https://motion-prompting.github.io/
 
 ---

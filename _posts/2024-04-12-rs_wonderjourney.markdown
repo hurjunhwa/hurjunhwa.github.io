@@ -12,6 +12,6 @@ venue: "CVPR"
 arxiv: https://arxiv.org/abs/2312.03884
 paper: https://arxiv.org/abs/2312.03884
 project: https://kovenyu.com/WonderJourney
-
+code: https://github.com/KovenYu/WonderJourney
 ---
 

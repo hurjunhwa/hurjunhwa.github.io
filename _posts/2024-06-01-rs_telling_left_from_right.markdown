@@ -12,5 +12,5 @@ venue: "NeurIPS"
 arxiv: https://arxiv.org/abs/2311.17034
 paper: https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Telling_Left_from_Right_Identifying_Geometry-Aware_Semantic_Correspondence_CVPR_2024_paper.pdf
 project: https://telling-left-from-right.github.io/
-
+code: https://github.com/Junyi42/geoaware-sc
 ---

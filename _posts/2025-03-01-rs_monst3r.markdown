@@ -2,7 +2,7 @@
 layout: post
 alias: monst3r
 categories: research
-title: "MonST3R: A simple approach for estimating geometry in the presence of motion"
+title: "MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion"
 titlelink: https://monst3r-project.github.io/
 year: 2025
 image: /images/2025/2025_monst3r.png
@@ -13,5 +13,5 @@ comment: "Spotlight presentation"
 arxiv: https://arxiv.org/abs/2410.03825
 paper: https://openreview.net/pdf?id=lJpqxFgWCM
 project: https://monst3r-project.github.io/
-
+code: https://github.com/Junyi42/monst3r
 ---
