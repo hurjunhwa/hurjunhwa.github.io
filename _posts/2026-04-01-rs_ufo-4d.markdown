@@ -1,0 +1,17 @@
+---
+layout: post
+alias: ufo-4d
+categories: research
+title: "UFO-4D: Unposed Feedforward 4D Reconstruction from Two Images"
+titlelink: https://ufo-4d.github.io/
+year: 2026
+image: /images/2026/2026_ufo-4d.jpg
+video_over: /images/2026/2026_ufo-4d.mp4
+authors: "<b>Junhwa Hur</b>, Charles Herrmann, Songyou Peng, Philipp Henzler, Zeyu Ma, Todd Zickler, Deqing Sun"
+venue: "ICLR"
+arxiv: https://arxiv.org/abs/2602.24290
+paper: https://openreview.net/pdf/2ced96b9fcaf8f17036247fede245202de42b814.pdf
+project: https://github.com/ufo-4d/ufo-4d
+---
+
+
