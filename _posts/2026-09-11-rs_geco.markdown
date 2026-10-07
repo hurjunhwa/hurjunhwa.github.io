@@ -1,0 +1,18 @@
+---
+layout: post
+alias: geco
+categories: research
+title: "GeCo: Evaluating Geometric Consistency for Video Generation via Motion and Structure"
+titlelink: https://geco-geoconsistency.github.io/
+year: 2026
+image: /images/2026/2026_geco.jpg
+video_over: /images/2026/2026_geco.mp4
+authors: "Leslie Gu, <b>Junhwa Hur</b>, Charles Herrmann, Fangneng Zhan, Todd Zickler, Deqing Sun, Hanspeter Pfister"
+venue: "ECCV"
+arxiv: https://arxiv.org/abs/2512.22274
+paper: https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/4377.pdf
+project: https://geco-geoconsistency.github.io/
+code: https://github.com/ShixuanGu/GeCo
+---
+
+

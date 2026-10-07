@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;max-width:820px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -71,63 +71,30 @@
               <h2>Research </h2>
             </td>
           </tr>
-          {% for post in site.posts %}{% for cat in post.categories %}{% if cat == 'research' %}
-          <tr onmouseout="{{post.alias}}_stop()" onmouseover="{{post.alias}}_start()">
+          {% for post in site.posts %}{% if post.categories contains 'research' %}
+          <tr onmouseout="hoverStop(this)" onmouseover="hoverStart(this)">
             <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
-              <div class="one" style="width:auto; height:auto; max-width:100%; position: relative;">
-                <img src="{{ post.image }}" width="160" style="display: block; width: 100%; height: auto;">
-                <div class="two" id="{{post.alias}}_mouseover" style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;">
+              <div class="one">
+                <img src="{{ post.image }}" width="160">
+                <div class="two">
                   {% if post.video_over %}
-                    <video width="160" height="auto" muted loop preload="auto" style="display: block; width: 100%; height: auto;">
+                    <video width="160" muted loop preload="auto">
                       <source src="{{ post.video_over }}" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                   {% elsif post.image_over %}
-                    <img src="{{ post.image_over }}" width="160" style="display: block; width: 100%; height: auto;">
+                    <img src="{{ post.image_over }}" width="160">
                   {% endif %}
                 </div>
               </div>
-
-              <script type="text/javascript">
-                function {{post.alias}}_start() {
-                  const mouseoverDiv = document.getElementById('{{post.alias}}_mouseover');
-                  if (!mouseoverDiv) return;
-
-                  mouseoverDiv.style.opacity = "1";
-
-                  {% if post.video_over %}
-                    const videoElement = mouseoverDiv.querySelector('video');
-                    if (videoElement) {videoElement.play();}
-                  {% endif %}
-                }
-
-                function {{post.alias}}_stop() {
-                  const mouseoverDiv = document.getElementById('{{post.alias}}_mouseover');
-                   if (!mouseoverDiv) return;
-
-                  mouseoverDiv.style.opacity = "0";
-
-                  // Only try to pause video if video_over exists for this post
-                  {% if post.video_over %}
-                    const videoElement = mouseoverDiv.querySelector('video');
-                    if (videoElement) {
-                      videoElement.pause();
-                      // Optional: Reset video to the beginning when paused
-                      // videoElement.currentTime = 0;
-                    }
-                  {% endif %}
-                }
-                // Initial call to ensure the mouseover content is hidden on page load
-                {{post.alias}}_stop();
-              </script>
             </td>
-            <td style="padding:2.0%;width:75%;vertical-align:middle">              
+            <td class="paper-info" style="padding:2.0%;width:75%;vertical-align:middle">              
               {% if post.titlelink %}<a href="{{post.titlelink}}"><h3>{{post.title}}</h3></a>{% else %}<h3>{{post.title}}</h3>{% endif %}
               <br>
               {{post.authors}}
               <br>
               {% if post.equal_contribution %}<em>*Equal contribution</em><br>{% endif %}
-              <em>{{post.venue}}</em>, {{post.year}}{% if post.comment %}<font color="#FA4841"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
+              <em>{{post.venue}}</em>, {{post.year}}{% if post.comment %}<font color="#B4412A"><b>&nbsp;&nbsp;{{post.comment}}</b></font>{% endif %}
               <br>{% if post.comingsoon %}<font color="gray">coming soon!</font>{% else %}
               <a href="{{post.paper}}">paper</a>{% if post.supp %} / 
               <a href="{{post.supp}}">supp</a>{% endif %}{% if post.arxiv %} / 
@@ -141,8 +108,33 @@
               {{ post.excerpt }}
             </td>
           </tr>
-        {% endif %}{% endfor %}{% endfor %}
+        {% endif %}{% endfor %}
         </table>
+
+        <script type="text/javascript">
+          function hoverStart(row) {
+            const mouseoverDiv = row.querySelector('.two');
+            if (!mouseoverDiv) return;
+            mouseoverDiv.style.opacity = "1";
+            const videoElement = mouseoverDiv.querySelector('video');
+            if (videoElement) {
+              videoElement.play();
+            }
+          }
+
+          function hoverStop(row) {
+            const mouseoverDiv = row.querySelector('.two');
+            if (!mouseoverDiv) return;
+            mouseoverDiv.style.opacity = "0";
+            // Only try to pause video if video_over exists for this post
+            const videoElement = mouseoverDiv.querySelector('video');
+            if (videoElement) {
+              videoElement.pause();
+              // Optional: Reset video to the beginning when paused
+              // videoElement.currentTime = 0;
+            }
+          }
+        </script>
 
         <br>
         <br>

@@ -1,0 +1,18 @@
+---
+layout: post
+alias: gr3en
+categories: research
+title: "GR3EN: Generative Relighting for 3D Environments"
+titlelink: https://gr3en-relight.github.io/
+year: 2026
+image: /images/2026/2026_gr3en.jpg
+video_over: /images/2026/2026_gr3en.mp4
+authors: "Xiaoyan Xing, Philipp Henzler, <b>Junhwa Hur</b>, Runze Li, Jonathan T. Barron, Pratul P. Srinivasan, Dor Verbin"
+venue: "SIGGRAPH"
+arxiv: https://arxiv.org/abs/2601.16272
+paper: https://dl.acm.org/doi/10.1145/3799902.3811181
+project: https://gr3en-relight.github.io/
+code: https://github.com/xyxingx/gr3en
+---
+
+

@@ -1,0 +1,18 @@
+---
+layout: post
+alias: loger
+categories: research
+title: "LoGeR: Long-Context Geometric Reconstruction with Hybrid Memory"
+titlelink: https://loger-project.github.io/
+year: 2026
+image: /images/2026/2026_loger.jpg
+video_over: /images/2026/2026_loger.mp4
+authors: "Junyi Zhang, Charles Herrmann, <b>Junhwa Hur</b>, Chen Sun, Ming-Hsuan Yang, Forrester Cole, Trevor Darrell, Deqing Sun"
+venue: "ECCV"
+arxiv: https://arxiv.org/abs/2603.03269
+paper: https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/787.pdf
+project: https://loger-project.github.io/
+code: https://github.com/Junyi42/LoGeR
+---
+
+

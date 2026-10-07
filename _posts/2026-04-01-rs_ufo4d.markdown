@@ -12,6 +12,7 @@ venue: "ICLR"
 arxiv: https://arxiv.org/abs/2602.24290
 paper: https://openreview.net/pdf/2ced96b9fcaf8f17036247fede245202de42b814.pdf
 project: https://ufo-4d.github.io/
+code: https://github.com/ufo-4d/ufo-4d
 ---
 
 

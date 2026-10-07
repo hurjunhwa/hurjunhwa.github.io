@@ -1,0 +1,18 @@
+---
+layout: post
+alias: orbit
+categories: research
+title: "ORBIT++: Benchmarking SfM in the Wild with 360° Video"
+titlelink: https://orbit-sfm.github.io/
+year: 2026
+image: /images/2026/2026_orbit.jpg
+video_over: /images/2026/2026_orbit.mp4
+authors: "Sara Sabour, Linyi Jin, Richard Tucker, Amir Hertz, Marcus Brubaker, Saurabh Saxena, <b>Junhwa Hur</b>, Andrea Tagliasacchi, Deqing Sun, David J. Fleet, Richard Szeliski, Noah Snavely"
+venue: "CVPR & extended version"
+arxiv: https://arxiv.org/abs/2608.22039
+paper: https://openaccess.thecvf.com/content/CVPR2026/papers/Sabour_ORBIT_Benchmarking_SfM_in_the_Wild_with_360deg_Video_CVPR_2026_paper.pdf
+project: https://orbit-sfm.github.io/
+code: https://github.com/google-deepmind/orbit_sfm
+---
+
+

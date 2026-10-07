@@ -12,14 +12,20 @@
 /**************/
 /* BASE RULES */
 /**************/
+body {
+  background-color: #FAF9F5;
+  color: #2B343D;
+}
+
 a {
-  color: #1772d0;
+  color: #2C5E8A;
   text-decoration: none;
+  transition: color 0.18s ease-in-out;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #C06041;
   text-decoration: none;
 }
 
@@ -31,72 +37,99 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-display: auto;
-}
-
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
-}
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
 }
 
 h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: normal;
-  font-display: auto;
+  color: #1C2228;
   text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding: 0;
+  margin: 14px 0;
+}
 
+h2 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #1C2228;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  display: inline;
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+// Rounded corners for paper thumbnails (static image + hover video)
+.one img,
+.one video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.one video {
+  height: 100%;
+  object-fit: cover;
+}
+
+tr[onmouseover] td {
+  transition: background-color 0.2s ease-in-out;
+}
+
+tr[onmouseover] td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+tr[onmouseover] td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+tr[onmouseover]:hover td {
+  background-color: #F5F3EE;
+}
+
+tr[onmouseover]:hover .one {
+  box-shadow: 0 3px 6px rgba(28, 34, 40, 0.22);
+}
+
+// The one-line paper summary (post.excerpt) renders as <p>. Its default 1em
+// bottom margin counts toward the cell height and pushes the visible text ~7px
+// above the thumbnail's vertical center. Keep the gap above, drop the one below.
+.paper-info p:last-child {
+  margin-bottom: 0;
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #F3EFE2;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
