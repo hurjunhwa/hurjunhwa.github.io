@@ -20,7 +20,6 @@ body {
 a {
   color: #2C5E8A;
   text-decoration: none;
-  transition: color 0.18s ease-in-out;
 }
 
 a:focus,
@@ -72,7 +71,6 @@ h3 {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
-  transition: box-shadow 0.2s ease-in-out;
 }
 
 .two {
@@ -82,7 +80,8 @@ h3 {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  transition: opacity 0.15s ease-out;
 }
 
 // Rounded corners for paper thumbnails (static image + hover video)
@@ -99,26 +98,30 @@ h3 {
   object-fit: cover;
 }
 
-tr[onmouseover] td {
-  transition: background-color 0.2s ease-in-out;
-}
-
-tr[onmouseover] td:first-child {
+tr.paper-row td:first-child {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
-tr[onmouseover] td:last-child {
+tr.paper-row td:last-child {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
-tr[onmouseover]:hover td {
-  background-color: #F5F3EE;
+tr.paper-row.is-hovered td {
+  background-color: #F3F1EC;
 }
 
-tr[onmouseover]:hover .one {
+tr.paper-row.is-hovered .one {
   box-shadow: 0 3px 6px rgba(28, 34, 40, 0.22);
+}
+
+tr.paper-row.is-hovered .two {
+  opacity: 1;
+}
+
+tr.paper-hidden {
+  display: none;
 }
 
 // The one-line paper summary (post.excerpt) renders as <p>. Its default 1em

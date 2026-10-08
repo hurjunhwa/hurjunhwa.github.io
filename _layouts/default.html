@@ -71,19 +71,21 @@
               <h2>Research </h2>
             </td>
           </tr>
+          {% assign paper_count = 0 %}
           {% for post in site.posts %}{% if post.categories contains 'research' %}
-          <tr onmouseout="hoverStop(this)" onmouseover="hoverStart(this)">
+          {% assign paper_count = paper_count | plus: 1 %}
+          <tr class="paper-row{% if paper_count > 10 %} paper-hidden{% endif %}">
             <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
               <div class="one">
-                <img src="{{ post.image }}" width="160">
+                <img {% if paper_count > 10 %}data-src="{{ post.image }}"{% else %}src="{{ post.image }}"{% endif %} width="160">
                 <div class="two">
                   {% if post.video_over %}
-                    <video width="160" muted loop preload="auto">
-                      <source src="{{ post.video_over }}" type="video/mp4">
+                    <video width="160" muted loop preload="{% if paper_count > 10 %}none{% else %}auto{% endif %}">
+                      <source {% if paper_count > 10 %}data-src="{{ post.video_over }}"{% else %}src="{{ post.video_over }}"{% endif %} type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                   {% elsif post.image_over %}
-                    <img src="{{ post.image_over }}" width="160">
+                    <img {% if paper_count > 10 %}data-src="{{ post.image_over }}"{% else %}src="{{ post.image_over }}"{% endif %} width="160">
                   {% endif %}
                 </div>
               </div>
@@ -110,30 +112,96 @@
           </tr>
         {% endif %}{% endfor %}
         </table>
+        <div id="paper-sentinel"></div>
 
         <script type="text/javascript">
-          function hoverStart(row) {
-            const mouseoverDiv = row.querySelector('.two');
-            if (!mouseoverDiv) return;
-            mouseoverDiv.style.opacity = "1";
-            const videoElement = mouseoverDiv.querySelector('video');
-            if (videoElement) {
-              videoElement.play();
-            }
-          }
+          (function() {
+            let activeRow = null;
+            let mouseX = -1;
+            let mouseY = -1;
 
-          function hoverStop(row) {
-            const mouseoverDiv = row.querySelector('.two');
-            if (!mouseoverDiv) return;
-            mouseoverDiv.style.opacity = "0";
-            // Only try to pause video if video_over exists for this post
-            const videoElement = mouseoverDiv.querySelector('video');
-            if (videoElement) {
-              videoElement.pause();
-              // Optional: Reset video to the beginning when paused
-              // videoElement.currentTime = 0;
+            function setHoveredRow(newRow) {
+              if (newRow === activeRow) return;
+              if (activeRow) {
+                activeRow.classList.remove('is-hovered');
+                const oldVideo = activeRow.querySelector('.two video');
+                if (oldVideo) oldVideo.pause();
+              }
+              activeRow = newRow;
+              if (activeRow) {
+                activeRow.classList.add('is-hovered');
+                const newVideo = activeRow.querySelector('.two video');
+                if (newVideo) newVideo.play();
+              }
             }
-          }
+
+            function updateHoverFromPoint() {
+              if (mouseX < 0 || mouseY < 0) return;
+              const el = document.elementFromPoint(mouseX, mouseY);
+              const row = el ? el.closest('tr.paper-row') : null;
+              setHoveredRow(row);
+            }
+
+            window.addEventListener('mousemove', function(e) {
+              mouseX = e.clientX;
+              mouseY = e.clientY;
+              const row = e.target && e.target.closest ? e.target.closest('tr.paper-row') : null;
+              setHoveredRow(row);
+            }, { passive: true });
+
+            window.addEventListener('wheel', function(e) {
+              mouseX = e.clientX;
+              mouseY = e.clientY;
+            }, { passive: true });
+
+            window.addEventListener('scroll', updateHoverFromPoint, { passive: true });
+
+            document.addEventListener('mouseleave', function() {
+              mouseX = -1;
+              mouseY = -1;
+              setHoveredRow(null);
+            });
+
+            const BATCH_SIZE = 10;
+            const sentinel = document.getElementById('paper-sentinel');
+            if (!sentinel) return;
+
+            let observer = null;
+
+            function revealNextBatch() {
+              const hiddenRows = document.querySelectorAll('tr.paper-row.paper-hidden');
+              const count = Math.min(BATCH_SIZE, hiddenRows.length);
+              for (let i = 0; i < count; i++) {
+                const row = hiddenRows[i];
+                row.classList.remove('paper-hidden');
+                row.querySelectorAll('img[data-src]').forEach(function(img) {
+                  img.setAttribute('src', img.getAttribute('data-src'));
+                  img.removeAttribute('data-src');
+                });
+                row.querySelectorAll('video source[data-src]').forEach(function(source) {
+                  source.setAttribute('src', source.getAttribute('data-src'));
+                  source.removeAttribute('data-src');
+                  const video = source.parentElement;
+                  if (video) {
+                    video.setAttribute('preload', 'auto');
+                    video.load();
+                  }
+                });
+              }
+              updateHoverFromPoint();
+              if (hiddenRows.length <= BATCH_SIZE && observer) {
+                observer.disconnect();
+              }
+            }
+
+            observer = new IntersectionObserver(function(entries) {
+              if (entries[0].isIntersecting) {
+                revealNextBatch();
+              }
+            }, { rootMargin: '200px' });
+
+            observer.observe(sentinel);
+          })();
         </script>
 
         <br>
