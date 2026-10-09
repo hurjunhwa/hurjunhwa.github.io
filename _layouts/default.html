@@ -80,7 +80,7 @@
                 <img {% if paper_count > 10 %}data-src="{{ post.image }}"{% else %}src="{{ post.image }}"{% endif %} width="160">
                 <div class="two">
                   {% if post.video_over %}
-                    <video width="160" muted loop preload="{% if paper_count > 10 %}none{% else %}auto{% endif %}">
+                    <video width="160" muted loop playsinline preload="{% if paper_count > 10 %}none{% else %}auto{% endif %}">
                       <source {% if paper_count > 10 %}data-src="{{ post.video_over }}"{% else %}src="{{ post.video_over }}"{% endif %} type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -131,7 +131,12 @@
               if (activeRow) {
                 activeRow.classList.add('is-hovered');
                 const newVideo = activeRow.querySelector('.two video');
-                if (newVideo) newVideo.play();
+                if (newVideo) {
+                  // Muted inline playback (no mobile fullscreen); ignore interrupted play().
+                  newVideo.muted = true;
+                  const playPromise = newVideo.play();
+                  if (playPromise && playPromise.catch) playPromise.catch(function() {});
+                }
               }
             }
 
