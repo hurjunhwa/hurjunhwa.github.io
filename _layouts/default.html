@@ -67,7 +67,7 @@
 <!-- Research -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+            <td colspan="2" style="padding:2.0%;width:100%;vertical-align:middle">
               <h2>Research </h2>
             </td>
           </tr>
@@ -76,9 +76,9 @@
           {% assign paper_count = paper_count | plus: 1 %}
           <tr class="paper-row{% if paper_count > 10 %} paper-hidden{% endif %}">
             <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
-              <div class="one">
+              <div class="paper-thumb">
                 <img {% if paper_count > 10 %}data-src="{{ post.image }}"{% else %}src="{{ post.image }}"{% endif %} width="160">
-                <div class="two">
+                <div class="paper-thumb-hover">
                   {% if post.video_over %}
                     <video width="160" muted loop playsinline preload="{% if paper_count > 10 %}none{% else %}auto{% endif %}">
                       <source {% if paper_count > 10 %}data-src="{{ post.video_over }}"{% else %}src="{{ post.video_over }}"{% endif %} type="video/mp4">
@@ -124,13 +124,13 @@
               if (newRow === activeRow) return;
               if (activeRow) {
                 activeRow.classList.remove('is-hovered');
-                const oldVideo = activeRow.querySelector('.two video');
+                const oldVideo = activeRow.querySelector('.paper-thumb-hover video');
                 if (oldVideo) oldVideo.pause();
               }
               activeRow = newRow;
               if (activeRow) {
                 activeRow.classList.add('is-hovered');
-                const newVideo = activeRow.querySelector('.two video');
+                const newVideo = activeRow.querySelector('.paper-thumb-hover video');
                 if (newVideo) {
                   // Muted inline playback (no mobile fullscreen); ignore interrupted play().
                   newVideo.muted = true;

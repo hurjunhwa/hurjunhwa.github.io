@@ -12,9 +12,12 @@
 /**************/
 /* BASE RULES */
 /**************/
+html,
 body {
   background-color: #FAF9F5;
   color: #2B343D;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 a {
@@ -64,16 +67,17 @@ h3 {
   display: inline;
 }
 
-.one {
-  width: auto;
+.paper-thumb {
+  width: 160px;
   height: auto;
-  max-width: 100%;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
 }
 
-.two {
+.paper-thumb-hover {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -89,16 +93,16 @@ h3 {
 }
 
 // Rounded corners for paper thumbnails (static image + hover video)
-.one img,
-.one video {
+.paper-thumb img,
+.paper-thumb video {
   display: block;
-  width: 100%;
+  width: 160px;
   height: auto;
   border-radius: 6px;
 }
 
 // Stretch the hover video to the thumbnail box (same aspect ratio), independent of decoder-reported dimensions
-.one video {
+.paper-thumb video {
   height: 100%;
   object-fit: fill;
 }
@@ -117,11 +121,11 @@ tr.paper-row.is-hovered td {
   background-color: #F3F1EC;
 }
 
-tr.paper-row.is-hovered .one {
+tr.paper-row.is-hovered .paper-thumb {
   box-shadow: 0 3px 6px rgba(28, 34, 40, 0.22);
 }
 
-tr.paper-row.is-hovered .two {
+tr.paper-row.is-hovered .paper-thumb-hover {
   opacity: 1;
 }
 
