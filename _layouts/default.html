@@ -65,9 +65,13 @@
         </table>
 
 <!-- Research -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;table-layout:fixed;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <colgroup>
+            <col style="width:180px">
+            <col>
+          </colgroup>
           <tr>
-            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+            <td colspan="2" style="padding:2.0%;vertical-align:middle">
               <h2>Research </h2>
             </td>
           </tr>
@@ -75,7 +79,7 @@
           {% for post in site.posts %}{% if post.categories contains 'research' %}
           {% assign paper_count = paper_count | plus: 1 %}
           <tr class="paper-row{% if paper_count > 10 %} paper-hidden{% endif %}">
-            <td style="padding:2.0%;width:22%;vertical-align:middle;min-width:180px">
+            <td style="padding:2.0%;vertical-align:middle">
               <div class="paper-thumb">
                 <img {% if paper_count > 10 %}data-src="{{ post.image }}"{% else %}src="{{ post.image }}"{% endif %} width="160">
                 <div class="paper-thumb-hover">
@@ -90,7 +94,7 @@
                 </div>
               </div>
             </td>
-            <td class="paper-info" style="padding:2.0%;width:75%;vertical-align:middle">              
+            <td class="paper-info" style="padding:2.0%;vertical-align:middle">              
               {% if post.titlelink %}<a href="{{post.titlelink}}"><h3>{{post.title}}</h3></a>{% else %}<h3>{{post.title}}</h3>{% endif %}
               <br>
               {{post.authors}}

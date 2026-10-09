@@ -68,10 +68,9 @@ h3 {
 }
 
 .paper-thumb {
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
-  contain: inline-size;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
