@@ -97,10 +97,10 @@ h3 {
   border-radius: 6px;
 }
 
-// Fit the whole hover video inside the thumbnail box (never crop it)
+// Stretch the hover video to the thumbnail box (same aspect ratio), independent of decoder-reported dimensions
 .one video {
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 tr.paper-row td:first-child {
