@@ -68,16 +68,16 @@ h3 {
 }
 
 .paper-thumb {
-  width: 160px;
+  width: 100%;
   height: auto;
+  max-width: 100%;
+  contain: inline-size;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
 }
 
 .paper-thumb-hover {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -96,7 +96,7 @@ h3 {
 .paper-thumb img,
 .paper-thumb video {
   display: block;
-  width: 160px;
+  width: 100%;
   height: auto;
   border-radius: 6px;
 }
