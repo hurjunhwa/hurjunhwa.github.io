@@ -74,10 +74,10 @@ h3 {
 }
 
 .two {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   opacity: 0;
   pointer-events: none;
@@ -93,9 +93,10 @@ h3 {
   border-radius: 6px;
 }
 
+// Fit the whole hover video inside the thumbnail box (never crop it)
 .one video {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 tr.paper-row td:first-child {
