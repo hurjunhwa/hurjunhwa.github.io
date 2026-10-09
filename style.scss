@@ -82,6 +82,10 @@ h3 {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.15s ease-out;
+  // Opaque mask keeps the video on the normal compositing path; Chrome mobile
+  // otherwise hands it to a hardware overlay that renders it slightly larger.
+  -webkit-mask-image: linear-gradient(#000, #000);
+  mask-image: linear-gradient(#000, #000);
 }
 
 // Rounded corners for paper thumbnails (static image + hover video)
